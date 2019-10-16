@@ -1,0 +1,12 @@
+H:\Documents\Visual Studio 2017\Projects\WebBrowser\WebBrowser\bin\Debug\WebBrowser.exe.config
+H:\Documents\Visual Studio 2017\Projects\WebBrowser\WebBrowser\bin\Debug\WebBrowser.exe
+H:\Documents\Visual Studio 2017\Projects\WebBrowser\WebBrowser\bin\Debug\WebBrowser.pdb
+H:\Documents\Visual Studio 2017\Projects\WebBrowser\WebBrowser\obj\Debug\WebBrowser.csprojResolveAssemblyReference.cache
+H:\Documents\Visual Studio 2017\Projects\WebBrowser\WebBrowser\obj\Debug\WebBrowser.Properties.Resources.resources
+H:\Documents\Visual Studio 2017\Projects\WebBrowser\WebBrowser\obj\Debug\WebBrowser.csproj.GenerateResource.Cache
+H:\Documents\Visual Studio 2017\Projects\WebBrowser\WebBrowser\obj\Debug\WebBrowser.exe
+H:\Documents\Visual Studio 2017\Projects\WebBrowser\WebBrowser\obj\Debug\WebBrowser.pdb
+H:\Documents\Visual Studio 2017\Projects\WebBrowser\WebBrowser\obj\Debug\WebBrowser.MainWindow.resources
+h:\documents\visual studio 2017\Projects\WebBrowser\WebBrowser\obj\Debug\WebBrowser.FavoritesForm.resources
+h:\documents\visual studio 2017\Projects\WebBrowser\WebBrowser\obj\Debug\WebBrowser.HistoryForm.resources
+h:\documents\visual studio 2017\Projects\WebBrowser\WebBrowser\obj\Debug\WebBrowser.FavoriteListForm.resources

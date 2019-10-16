@@ -1,0 +1,136 @@
+<SOAP-ENV:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:SOAP-ENC="http://schemas.xmlsoap.org/soap/encoding/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns:clr="http://schemas.microsoft.com/soap/encoding/clr/1.0" SOAP-ENV:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/">
+<SOAP-ENV:Body>
+<a1:History id="ref-1" xmlns:a1="http://schemas.microsoft.com/clr/nsassem/WebBrowser.Models/WebBrowser%2C%20Version%3D1.0.0.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Dnull">
+<_x003C_HistoryOfAddresses_x003E_k__BackingField href="#ref-3"/>
+</a1:History>
+<a2:ArrayList id="ref-3" xmlns:a2="http://schemas.microsoft.com/clr/ns/System.Collections">
+<_items href="#ref-4"/>
+<_size>14</_size>
+<_version>14</_version>
+</a2:ArrayList>
+<SOAP-ENC:Array id="ref-4" SOAP-ENC:arrayType="xsd:anyType[16]">
+<item href="#ref-5"/>
+<item href="#ref-6"/>
+<item href="#ref-7"/>
+<item href="#ref-8"/>
+<item href="#ref-9"/>
+<item href="#ref-10"/>
+<item href="#ref-11"/>
+<item href="#ref-12"/>
+<item href="#ref-13"/>
+<item href="#ref-14"/>
+<item href="#ref-15"/>
+<item href="#ref-16"/>
+<item href="#ref-17"/>
+<item href="#ref-18"/>
+</SOAP-ENC:Array>
+<a1:HistoryItem id="ref-5" xmlns:a1="http://schemas.microsoft.com/clr/nsassem/WebBrowser.Models/WebBrowser%2C%20Version%3D1.0.0.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Dnull">
+<_x003C_Address_x003E_k__BackingField id="ref-19">http://www.history.com</_x003C_Address_x003E_k__BackingField>
+<_x003C_AccessDate_x003E_k__BackingField>2019-10-12T22:47:18.4391192+01:00</_x003C_AccessDate_x003E_k__BackingField>
+</a1:HistoryItem>
+<a1:HistoryItem id="ref-6" xmlns:a1="http://schemas.microsoft.com/clr/nsassem/WebBrowser.Models/WebBrowser%2C%20Version%3D1.0.0.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Dnull">
+<_x003C_Address_x003E_k__BackingField id="ref-20">http://www.amazon.com</_x003C_Address_x003E_k__BackingField>
+<_x003C_AccessDate_x003E_k__BackingField>2019-10-12T22:52:25.2265677+01:00</_x003C_AccessDate_x003E_k__BackingField>
+</a1:HistoryItem>
+<a1:HistoryItem id="ref-7" xmlns:a1="http://schemas.microsoft.com/clr/nsassem/WebBrowser.Models/WebBrowser%2C%20Version%3D1.0.0.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Dnull">
+<_x003C_Address_x003E_k__BackingField href="#ref-20"/>
+<_x003C_AccessDate_x003E_k__BackingField>2019-10-12T22:52:38.2507004+01:00</_x003C_AccessDate_x003E_k__BackingField>
+</a1:HistoryItem>
+<a1:HistoryItem id="ref-8" xmlns:a1="http://schemas.microsoft.com/clr/nsassem/WebBrowser.Models/WebBrowser%2C%20Version%3D1.0.0.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Dnull">
+<_x003C_Address_x003E_k__BackingField href="#ref-20"/>
+<_x003C_AccessDate_x003E_k__BackingField>2019-10-12T22:52:38.5409656+01:00</_x003C_AccessDate_x003E_k__BackingField>
+</a1:HistoryItem>
+<a1:HistoryItem id="ref-9" xmlns:a1="http://schemas.microsoft.com/clr/nsassem/WebBrowser.Models/WebBrowser%2C%20Version%3D1.0.0.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Dnull">
+<_x003C_Address_x003E_k__BackingField href="#ref-20"/>
+<_x003C_AccessDate_x003E_k__BackingField>2019-10-12T22:52:39.3836405+01:00</_x003C_AccessDate_x003E_k__BackingField>
+</a1:HistoryItem>
+<a1:HistoryItem id="ref-10" xmlns:a1="http://schemas.microsoft.com/clr/nsassem/WebBrowser.Models/WebBrowser%2C%20Version%3D1.0.0.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Dnull">
+<_x003C_Address_x003E_k__BackingField id="ref-21">http://www.amazon.co.uk</_x003C_Address_x003E_k__BackingField>
+<_x003C_AccessDate_x003E_k__BackingField>2019-10-12T23:29:22.6602490+01:00</_x003C_AccessDate_x003E_k__BackingField>
+</a1:HistoryItem>
+<a1:HistoryItem id="ref-11" xmlns:a1="http://schemas.microsoft.com/clr/nsassem/WebBrowser.Models/WebBrowser%2C%20Version%3D1.0.0.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Dnull">
+<_x003C_Address_x003E_k__BackingField id="ref-22">https://www.dimartinot.com</_x003C_Address_x003E_k__BackingField>
+<_x003C_AccessDate_x003E_k__BackingField>2019-10-13T09:55:00.7182144+01:00</_x003C_AccessDate_x003E_k__BackingField>
+</a1:HistoryItem>
+<a1:HistoryItem id="ref-12" xmlns:a1="http://schemas.microsoft.com/clr/nsassem/WebBrowser.Models/WebBrowser%2C%20Version%3D1.0.0.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Dnull">
+<_x003C_Address_x003E_k__BackingField id="ref-23">https://www.dimartinot.com</_x003C_Address_x003E_k__BackingField>
+<_x003C_AccessDate_x003E_k__BackingField>2019-10-13T10:44:59.8872192+01:00</_x003C_AccessDate_x003E_k__BackingField>
+</a1:HistoryItem>
+<a1:HistoryItem id="ref-13" xmlns:a1="http://schemas.microsoft.com/clr/nsassem/WebBrowser.Models/WebBrowser%2C%20Version%3D1.0.0.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Dnull">
+<_x003C_Address_x003E_k__BackingField id="ref-24">https://www.dimartinot.com</_x003C_Address_x003E_k__BackingField>
+<_x003C_AccessDate_x003E_k__BackingField>2019-10-13T11:28:16.7669967+01:00</_x003C_AccessDate_x003E_k__BackingField>
+</a1:HistoryItem>
+<a1:HistoryItem id="ref-14" xmlns:a1="http://schemas.microsoft.com/clr/nsassem/WebBrowser.Models/WebBrowser%2C%20Version%3D1.0.0.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Dnull">
+<_x003C_Address_x003E_k__BackingField id="ref-25">http://httpstat.us/404</_x003C_Address_x003E_k__BackingField>
+<_x003C_AccessDate_x003E_k__BackingField>2019-10-13T16:20:18.8231204+01:00</_x003C_AccessDate_x003E_k__BackingField>
+</a1:HistoryItem>
+<a1:HistoryItem id="ref-15" xmlns:a1="http://schemas.microsoft.com/clr/nsassem/WebBrowser.Models/WebBrowser%2C%20Version%3D1.0.0.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Dnull">
+<_x003C_Address_x003E_k__BackingField id="ref-26">http://httpstat.us/403</_x003C_Address_x003E_k__BackingField>
+<_x003C_AccessDate_x003E_k__BackingField>2019-10-13T16:20:27.1091453+01:00</_x003C_AccessDate_x003E_k__BackingField>
+</a1:HistoryItem>
+<a1:HistoryItem id="ref-16" xmlns:a1="http://schemas.microsoft.com/clr/nsassem/WebBrowser.Models/WebBrowser%2C%20Version%3D1.0.0.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Dnull">
+<_x003C_Address_x003E_k__BackingField id="ref-27">http://httpstat.us/400</_x003C_Address_x003E_k__BackingField>
+<_x003C_AccessDate_x003E_k__BackingField>2019-10-13T16:20:35.8773353+01:00</_x003C_AccessDate_x003E_k__BackingField>
+</a1:HistoryItem>
+<a1:HistoryItem id="ref-17" xmlns:a1="http://schemas.microsoft.com/clr/nsassem/WebBrowser.Models/WebBrowser%2C%20Version%3D1.0.0.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Dnull">
+<_x003C_Address_x003E_k__BackingField id="ref-28">http://httpstat.us/404</_x003C_Address_x003E_k__BackingField>
+<_x003C_AccessDate_x003E_k__BackingField>2019-10-13T16:26:14.9570724+01:00</_x003C_AccessDate_x003E_k__BackingField>
+</a1:HistoryItem>
+<a1:HistoryItem id="ref-18" xmlns:a1="http://schemas.microsoft.com/clr/nsassem/WebBrowser.Models/WebBrowser%2C%20Version%3D1.0.0.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Dnull">
+<_x003C_Address_x003E_k__BackingField id="ref-29">http://httpstat.us/403</_x003C_Address_x003E_k__BackingField>
+<_x003C_AccessDate_x003E_k__BackingField>2019-10-13T16:26:58.6185437+01:00</_x003C_AccessDate_x003E_k__BackingField>
+</a1:HistoryItem>
+</SOAP-ENV:Body>
+</SOAP-ENV:Envelope>
+621471+01:00</_x003C_accessDate_x003E_k__BackingField>
+</a1:HistoryItem>
+<a1:HistoryItem id="ref-19" xmlns:a1="http://schemas.microsoft.com/clr/nsassem/WebBrowser.Models/WebBrowser%2C%20Version%3D1.0.0.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Dnull">
+<_x003C_address_x003E_k__BackingField href="#ref-37"/>
+<_x003C_accessDate_x003E_k__BackingField>2019-10-12T21:02:23.6463114+01:00</_x003C_accessDate_x003E_k__BackingField>
+</a1:HistoryItem>
+<a1:HistoryItem id="ref-20" xmlns:a1="http://schemas.microsoft.com/clr/nsassem/WebBrowser.Models/WebBrowser%2C%20Version%3D1.0.0.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Dnull">
+<_x003C_address_x003E_k__BackingField href="#ref-38"/>
+<_x003C_accessDate_x003E_k__BackingField>2019-10-12T21:02:24.5321559+01:00</_x003C_accessDate_x003E_k__BackingField>
+</a1:HistoryItem>
+<a1:HistoryItem id="ref-21" xmlns:a1="http://schemas.microsoft.com/clr/nsassem/WebBrowser.Models/WebBrowser%2C%20Version%3D1.0.0.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Dnull">
+<_x003C_address_x003E_k__BackingField href="#ref-38"/>
+<_x003C_accessDate_x003E_k__BackingField>2019-10-12T21:02:25.3969049+01:00</_x003C_accessDate_x003E_k__BackingField>
+</a1:HistoryItem>
+<a1:HistoryItem id="ref-22" xmlns:a1="http://schemas.microsoft.com/clr/nsassem/WebBrowser.Models/WebBrowser%2C%20Version%3D1.0.0.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Dnull">
+<_x003C_address_x003E_k__BackingField href="#ref-38"/>
+<_x003C_accessDate_x003E_k__BackingField>2019-10-12T21:02:27.2261731+01:00</_x003C_accessDate_x003E_k__BackingField>
+</a1:HistoryItem>
+<a1:HistoryItem id="ref-23" xmlns:a1="http://schemas.microsoft.com/clr/nsassem/WebBrowser.Models/WebBrowser%2C%20Version%3D1.0.0.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Dnull">
+<_x003C_address_x003E_k__BackingField href="#ref-38"/>
+<_x003C_accessDate_x003E_k__BackingField>2019-10-12T21:02:27.3963310+01:00</_x003C_accessDate_x003E_k__BackingField>
+</a1:HistoryItem>
+<a1:HistoryItem id="ref-24" xmlns:a1="http://schemas.microsoft.com/clr/nsassem/WebBrowser.Models/WebBrowser%2C%20Version%3D1.0.0.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Dnull">
+<_x003C_address_x003E_k__BackingField href="#ref-37"/>
+<_x003C_accessDate_x003E_k__BackingField>2019-10-12T21:02:27.9367612+01:00</_x003C_accessDate_x003E_k__BackingField>
+</a1:HistoryItem>
+<a1:HistoryItem id="ref-25" xmlns:a1="http://schemas.microsoft.com/clr/nsassem/WebBrowser.Models/WebBrowser%2C%20Version%3D1.0.0.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Dnull">
+<_x003C_address_x003E_k__BackingField href="#ref-36"/>
+<_x003C_accessDate_x003E_k__BackingField>2019-10-12T21:02:28.3255388+01:00</_x003C_accessDate_x003E_k__BackingField>
+</a1:HistoryItem>
+<a1:HistoryItem id="ref-26" xmlns:a1="http://schemas.microsoft.com/clr/nsassem/WebBrowser.Models/WebBrowser%2C%20Version%3D1.0.0.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Dnull">
+<_x003C_address_x003E_k__BackingField href="#ref-36"/>
+<_x003C_accessDate_x003E_k__BackingField>2019-10-12T21:02:30.4584985+01:00</_x003C_accessDate_x003E_k__BackingField>
+</a1:HistoryItem>
+<a1:HistoryItem id="ref-27" xmlns:a1="http://schemas.microsoft.com/clr/nsassem/WebBrowser.Models/WebBrowser%2C%20Version%3D1.0.0.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Dnull">
+<_x003C_address_x003E_k__BackingField href="#ref-37"/>
+<_x003C_accessDate_x003E_k__BackingField>2019-10-12T21:02:30.8206880+01:00</_x003C_accessDate_x003E_k__BackingField>
+</a1:HistoryItem>
+<a1:HistoryItem id="ref-28" xmlns:a1="http://schemas.microsoft.com/clr/nsassem/WebBrowser.Models/WebBrowser%2C%20Version%3D1.0.0.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Dnull">
+<_x003C_address_x003E_k__BackingField href="#ref-38"/>
+<_x003C_accessDate_x003E_k__BackingField>2019-10-12T21:02:31.5764548+01:00</_x003C_accessDate_x003E_k__BackingField>
+</a1:HistoryItem>
+<a1:HistoryItem id="ref-29" xmlns:a1="http://schemas.microsoft.com/clr/nsassem/WebBrowser.Models/WebBrowser%2C%20Version%3D1.0.0.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Dnull">
+<_x003C_address_x003E_k__BackingField href="#ref-38"/>
+<_x003C_accessDate_x003E_k__BackingField>2019-10-12T21:02:31.5894205+01:00</_x003C_accessDate_x003E_k__BackingField>
+</a1:HistoryItem>
+<a1:HistoryItem id="ref-30" xmlns:a1="http://schemas.microsoft.com/clr/nsassem/WebBrowser.Models/WebBrowser%2C%20Version%3D1.0.0.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Dnull">
+<_x003C_address_x003E_k__BackingField href="#ref-38"/>
+<_x003C_accessDate_x003E_k__BackingField>2019-10-12T21:02:31.8194676+01:00</_x003C_accessDate_x003E_k__BackingField>
+</a1:HistoryItem>
+</SOAP-ENV:Body>
+</SOAP-ENV:Envelope>

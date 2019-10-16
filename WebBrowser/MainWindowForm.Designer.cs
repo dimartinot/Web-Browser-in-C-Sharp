@@ -50,7 +50,7 @@
             this.tableLayoutPanel1.ColumnCount = 3;
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 11.86161F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 88.13838F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 184F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 185F));
             this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel2, 0, 0);
             this.tableLayoutPanel1.Controls.Add(this.addressTextBox, 1, 0);
             this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel4, 2, 0);
@@ -126,7 +126,7 @@
             // 
             this.addressTextBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.addressTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.addressTextBox.Location = new System.Drawing.Point(131, 3);
+            this.addressTextBox.Location = new System.Drawing.Point(130, 3);
             this.addressTextBox.Name = "addressTextBox";
             this.addressTextBox.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.addressTextBox.Size = new System.Drawing.Size(938, 29);
@@ -140,7 +140,7 @@
             this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 77.45665F));
             this.tableLayoutPanel4.Controls.Add(this.comboBox1, 1, 0);
             this.tableLayoutPanel4.Controls.Add(this.starButton, 0, 0);
-            this.tableLayoutPanel4.Location = new System.Drawing.Point(1073, 0);
+            this.tableLayoutPanel4.Location = new System.Drawing.Point(1072, 0);
             this.tableLayoutPanel4.Margin = new System.Windows.Forms.Padding(0);
             this.tableLayoutPanel4.Name = "tableLayoutPanel4";
             this.tableLayoutPanel4.RowCount = 1;

@@ -89,7 +89,7 @@ namespace WebBrowser
             {
                 case 0:
 
-                    HistoryForm historyForm = new HistoryForm(this.HistoryController);
+                    HistoryForm historyForm = new HistoryForm(this.HistoryController, this);
                     historyForm.ShowForm();
 
                     break;

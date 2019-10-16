@@ -6,6 +6,8 @@ using System.Runtime.Serialization.Formatters.Soap;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Collections.Generic;
+using WebBrowser.Models;
 
 namespace WebBrowser.Controllers
 {
@@ -18,6 +20,33 @@ namespace WebBrowser.Controllers
         public HistoryController()
         {
             this.LoadHistory();
+        }
+
+        public static ArrayList GetListOfItemsFromHistory(Models.History history)
+        {
+            return history.HistoryOfAddresses;
+        }
+
+        public Models.History SortHistory(string sortingPattern)
+        {
+            IEnumerable<Models.HistoryItem> sortedHistoryItems = from Models.HistoryItem address in this.CurrentHistory.HistoryOfAddresses where address.Address.Contains(String.Format("{0}", sortingPattern)) select address;
+
+            ArrayList addressList = new ArrayList();
+
+            foreach (Models.HistoryItem item in sortedHistoryItems)
+            {
+                addressList.Add(item);
+            }
+
+            return new Models.History
+            {
+                HistoryOfAddresses = addressList
+            };
+        }
+
+        public History GetCurrentHistory()
+        {
+            return this.CurrentHistory;
         }
 
         public void LoadHistory()

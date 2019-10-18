@@ -17,6 +17,7 @@ namespace WebBrowser
         private Controllers.NavigationController NavigationController { set; get; }
         private Controllers.HistoryController HistoryController { set; get; }
         private Controllers.FavoritesController FavoritesController { set; get; }
+        private Controllers.HomePageController HomePageController { set; get; }
 
         public Models.History History { set; get; }
 
@@ -26,6 +27,9 @@ namespace WebBrowser
             this.NavigationController = new Controllers.NavigationController();
             this.HistoryController = new Controllers.HistoryController();
             this.FavoritesController = new Controllers.FavoritesController();
+            this.HomePageController = new Controllers.HomePageController();
+
+            this.LoadContent(this.HomePageController.GetHomePage());
         }
 
         private void ReloadContent()
@@ -35,6 +39,7 @@ namespace WebBrowser
         {
             if (this.ActivePage != null)
             {
+                this.webPageTitle.Text = this.NavigationController.GetPageTitle(this.ActivePage);
                 this.pageBody.Text = this.ActivePage.Content;
                 this.addressTextBox.Text = this.ActivePage.Address;
                 this.HistoryController.AddAddress(this.ActivePage.Address);
@@ -50,7 +55,7 @@ namespace WebBrowser
         */
         {
             
-            this.ActivePage = await this.NavigationController.loadPage(address, this.ActivePage);
+            this.ActivePage = await this.NavigationController.LoadPage(address, this.ActivePage);
             this.ReloadContent();
 
         }
@@ -71,13 +76,13 @@ namespace WebBrowser
 
         private void ButtonLeft_Click(object sender, EventArgs e)
         {
-            this.ActivePage = this.NavigationController.backwardPage(this.ActivePage);
+            this.ActivePage = this.NavigationController.BackwardPage(this.ActivePage);
             this.ReloadContent();
         }
 
         private void ButtonRight_Click(object sender, EventArgs e)
         {
-            this.ActivePage = this.NavigationController.forwardPage(this.ActivePage);
+            this.ActivePage = this.NavigationController.ForwardPage(this.ActivePage);
             this.ReloadContent();
         }
 
@@ -122,6 +127,12 @@ namespace WebBrowser
         public void LoadAddressFromOutside(string address)
         {
             this.LoadContent(address);
+        }
+
+        private void HomeButton_Click(object sender, EventArgs e)
+        {
+            HomePageForm homePageForm = new HomePageForm(this.HomePageController);
+            homePageForm.Show();
         }
     }
 }

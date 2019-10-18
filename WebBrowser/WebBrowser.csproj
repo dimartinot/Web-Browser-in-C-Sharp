@@ -48,6 +48,7 @@
   <ItemGroup>
     <Compile Include="Controllers\FavoritesController.cs" />
     <Compile Include="Controllers\HistoryController.cs" />
+    <Compile Include="Controllers\HomePageController.cs" />
     <Compile Include="Controllers\HttpRequestController.cs" />
     <Compile Include="Exceptions\BadRequestException.cs" />
     <Compile Include="Exceptions\ForbiddenPageException.cs" />
@@ -59,6 +60,12 @@
     </Compile>
     <Compile Include="FavoritesForm.cs">
       <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HomePageForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HomePageForm.Designer.cs">
+      <DependentUpon>HomePageForm.cs</DependentUpon>
     </Compile>
     <Compile Include="MainWindowForm.cs">
       <SubType>Form</SubType>
@@ -77,6 +84,7 @@
     <Compile Include="Models\ForbiddenPage.cs" />
     <Compile Include="Models\History.cs" />
     <Compile Include="Models\HistoryItem.cs" />
+    <Compile Include="Models\HomeItem.cs" />
     <Compile Include="Models\NotFoundPage.cs" />
     <Compile Include="Models\Page.cs" />
     <Compile Include="Models\ServerErrorPage.cs" />
@@ -91,6 +99,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="HistoryForm.resx">
       <DependentUpon>HistoryForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HomePageForm.resx">
+      <DependentUpon>HomePageForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MainWindowForm.resx">
       <DependentUpon>MainWindowForm.cs</DependentUpon>
@@ -135,6 +146,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\star%281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\home-icon-silhouette.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

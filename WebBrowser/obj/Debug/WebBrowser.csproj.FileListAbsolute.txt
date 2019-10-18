@@ -22,3 +22,4 @@ H:\Documents\Visual Studio 2017\Projects\WebBrowser\Web-Broswer-in-C-\WebBrowser
 H:\Documents\Visual Studio 2017\Projects\WebBrowser\Web-Broswer-in-C-\WebBrowser\obj\Debug\WebBrowser.csproj.GenerateResource.Cache
 H:\Documents\Visual Studio 2017\Projects\WebBrowser\Web-Broswer-in-C-\WebBrowser\obj\Debug\WebBrowser.exe
 H:\Documents\Visual Studio 2017\Projects\WebBrowser\Web-Broswer-in-C-\WebBrowser\obj\Debug\WebBrowser.pdb
+H:\Documents\Visual Studio 2017\Projects\WebBrowser\Web-Broswer-in-C-\WebBrowser\obj\Debug\WebBrowser.HomePageForm.resources

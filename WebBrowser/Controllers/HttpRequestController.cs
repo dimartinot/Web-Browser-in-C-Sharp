@@ -47,6 +47,9 @@ namespace WebBrowser.Controllers
             } catch (HttpRequestException e)
             {
                 throw new Exceptions.UnsupportedErrorException(e.Message);
+            } catch (Exception e)
+            {
+                throw new Exceptions.PageNotFoundException(String.Format("Error: page '{0}' not found", address));
             }
         }
 

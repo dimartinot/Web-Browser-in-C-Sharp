@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 
 namespace WebBrowser.Controllers
@@ -9,19 +10,19 @@ namespace WebBrowser.Controllers
     public class NavigationController
     {
 
-        private HttpRequestController httpRequestController = new HttpRequestController();
+        private static HttpRequestController httpRequestController = new HttpRequestController();
 
-        private Stack<Models.Page> backwardPages = new Stack<Models.Page>();
-        private Stack<Models.Page> forwardPages = new Stack<Models.Page>();
+        private static Stack<Models.Page> backwardPages = new Stack<Models.Page>();
+        private static Stack<Models.Page> forwardPages = new Stack<Models.Page>();
 
         public NavigationController()
         {
 
         }
 
-        public async Task<Models.Page> loadPage(string address, Models.Page formerPage)
+        public async Task<Models.Page> LoadPage(string address, Models.Page formerPage)
         {
-            this.backwardPages.Push(formerPage);
+            backwardPages.Push(formerPage);
             if (address != null && address != "")
             {
 
@@ -58,30 +59,35 @@ namespace WebBrowser.Controllers
             }
         }
 
-        public Models.Page backwardPage(Models.Page currentPage)
+        public Models.Page BackwardPage(Models.Page currentPage)
         {
-            if (this.backwardPages.Count != 0)
+            if (backwardPages.Count != 0)
             {
-                this.forwardPages.Push(currentPage);
-                return this.backwardPages.Pop();
+                forwardPages.Push(currentPage);
+                return backwardPages.Pop();
             } else
             {
                 return currentPage;
             }
         }
 
-        public Models.Page forwardPage(Models.Page currentPage)
+        public Models.Page ForwardPage(Models.Page currentPage)
         {
-            if (this.forwardPages.Count != 0)
+            if (forwardPages.Count != 0)
             {
-                this.backwardPages.Push(currentPage);
-                return this.forwardPages.Pop();
+                backwardPages.Push(currentPage);
+                return forwardPages.Pop();
             }
             else
             {
                 return currentPage;
             }
 
+        }
+
+        public string GetPageTitle(Models.Page currentPage)
+        {
+            return Regex.Match(currentPage.Content, @"\<title\b[^>]*\>\s*(?<Title>[\s\S]*?)\</title\>", RegexOptions.IgnoreCase).Groups["Title"].Value;
         }
 
     }

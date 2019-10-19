@@ -7,6 +7,9 @@ using System.Threading.Tasks;
 
 namespace WebBrowser.Models
 {
+    /// <summary>
+    /// History model class embedding a list of <seealso cref="HistoryItem"/>.
+    /// </summary>
     [Serializable()]
     public class History
     {

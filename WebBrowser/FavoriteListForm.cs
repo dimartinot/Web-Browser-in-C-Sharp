@@ -8,6 +8,9 @@ using System.Windows.Forms;
 
 namespace WebBrowser
 {
+    /// <summary>
+    /// Class of the FavoriteList form, displaying the list of favorites and allowing to either acces, edit or delete them.
+    /// </summary>
     class FavoriteListForm : Form
     {
         private ComboBox listFavoriteItems;
@@ -23,9 +26,20 @@ namespace WebBrowser
         private Label editFavoriteAddressLabel;
         private TableLayoutPanel tableLayoutPanel1;
 
+        /// <summary>
+        /// <seealso cref="Controllers.FavoritesController"/> instance to provide the Favorites intelligence
+        /// </summary>
         private Controllers.FavoritesController FavoritesController { set; get; }
-
+        /// <summary>
+        /// <seealso cref="MainWindow"/> instance to be able to interact back with it (for the display of a given favorite)
+        /// </summary>
         private MainWindow MainWindow { set; get; }
+
+        /// <summary>
+        /// Class constructor calling the <seealso cref="InitializeComponent()"/> method (automatically generated).
+        /// </summary>
+        /// <param name="favoritesController"><seealso cref="Controllers.FavoritesController"/> instance</param>
+        /// <param name="mainWindow"><seealso cref="MainWindow"/> instance</param>
         public FavoriteListForm(Controllers.FavoritesController favoritesController, MainWindow mainWindow)
         {
             InitializeComponent();
@@ -34,6 +48,9 @@ namespace WebBrowser
             
         }
 
+        /// <summary>
+        /// Loads the <seealso cref="Models.FavoriteItem"/> in the ComboBox
+        /// </summary>
         public void LoadFavoritesInComboBox()
         {
             if (this.listFavoriteItems.Items != null)
@@ -50,12 +67,18 @@ namespace WebBrowser
             }
         }
 
+        /// <summary>
+        /// Calls the <seealso cref="LoadFavoritesInComboBox"/> method and displays the current form
+        /// </summary>
         public void ShowForm()
         {
             this.LoadFavoritesInComboBox();
             this.ShowDialog();
         }
 
+        /// <summary>
+        /// Automatically generated method that holds all the design information of the current form
+        /// </summary>
         private void InitializeComponent()
         {
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
@@ -204,7 +227,6 @@ namespace WebBrowser
             this.editFavoriteNameLabel.Size = new System.Drawing.Size(51, 20);
             this.editFavoriteNameLabel.TabIndex = 2;
             this.editFavoriteNameLabel.Text = "Name";
-            this.editFavoriteNameLabel.Click += new System.EventHandler(this.label1_Click);
             // 
             // editFavoriteAddressLabel
             // 
@@ -231,11 +253,11 @@ namespace WebBrowser
 
         }
 
-        private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
+        /// <summary>
+        /// Method that is called when the accessButton is being clicked: redirects the currentPage of the MainWindow to the favorite and closes the current form
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void accessButton_Click(object sender, EventArgs e)
         {
             if (this.listFavoriteItems.SelectedItem != null)
@@ -246,11 +268,11 @@ namespace WebBrowser
             }
         }
 
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
+        /// <summary>
+        /// Method that is called when the editButton is being clicked: redirects the currentPage of the MainWindow to the favorite and closes the current form
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void editFavoriteAddressLabel_Click(object sender, EventArgs e)
         {
             if (this.listFavoriteItems.SelectedItem != null)
@@ -273,6 +295,11 @@ namespace WebBrowser
             }
         }
 
+        /// <summary>
+        /// Method that is called when a new selection is made in the ComboBox. This updates the content of the Input Texts
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void listFavoriteItems_SelectedIndexChanged(object sender, EventArgs e)
         {
             if (this.listFavoriteItems.SelectedItem != null)
@@ -283,6 +310,11 @@ namespace WebBrowser
             }
         }
 
+        /// <summary>
+        /// Method that is called when the deleteButton is being clicked: deletes the currently selected favorite
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void deleteButton_Click(object sender, EventArgs e)
         {
             if (this.listFavoriteItems.SelectedItem != null)

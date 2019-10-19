@@ -6,7 +6,10 @@ using System.Threading.Tasks;
 
 namespace WebBrowser.Exceptions
 {
-    class ServerErrorException: Exception
+    /// <summary>
+    /// Exception class thrown when the HttpError message sent back by the HttpClient is 500, meaning a server error occured
+    /// </summary>
+    class ServerErrorException : Exception
     {
 
         public ServerErrorException(string message): base(message)

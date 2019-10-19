@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 
 namespace WebBrowser.Models
 {
+    /// <summary>
+    /// Page model of a "not found" page error
+    /// </summary>
     public class NotFoundPage : Page
     {
 

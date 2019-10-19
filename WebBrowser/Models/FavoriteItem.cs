@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 
 namespace WebBrowser.Models
 {
+    /// <summary>
+    /// FavoriteItem model class embedding a favorite address and names
+    /// </summary>
     [Serializable()]
     public class FavoriteItem
     {
@@ -19,6 +22,11 @@ namespace WebBrowser.Models
             this.Name = name;
         }
 
+        /// <summary>
+        /// Overrides the Equals method to check for attribute equality
+        /// </summary>
+        /// <param name="obj">The object to which we want to compare the current instance</param>
+        /// <returns><seealso cref="bool"/>: Boolean telling wether or not this instance equals the one passed as a parameter</returns>
         public override bool Equals(object obj)
         {
             if (typeof(FavoriteItem).IsInstanceOfType(obj))

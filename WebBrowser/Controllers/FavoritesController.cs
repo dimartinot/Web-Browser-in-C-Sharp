@@ -10,17 +10,32 @@ using WebBrowser.Models;
 
 namespace WebBrowser.Controllers
 {
+    /// <summary>
+    /// Controller class responsible for the intelligence code linked to the Favorites/Bookmarks management
+    /// </summary>
     class FavoritesController
     {
-
+        /// <summary>
+        /// Holds the instance of <seealso cref="Models.Favorites"/>  which acts as a list of FavoriteItems
+        /// </summary>
         private Models.Favorites Favorites { get; set; }
+        /// <summary>
+        /// Path to the .xml serialization of the "Favorites" instance
+        /// </summary>
         private const string FAVORITES_PATH = "favorites.xml";
 
+        /// <summary>
+        /// The class constructor: loads the favorites from the .xml file
+        /// </summary>
         public FavoritesController()
         {
             this.LoadFavorites();
         }
 
+        /// <summary>
+        /// Method that opens the .xml file and loads its content into the <seealso cref="Models.Favorites"/> class attribute.
+        /// If the file does not exist, create it and initialize the <seealso cref="Models.Favorites"/> class attribute as an empty list of <seealso cref="Models.FavoriteItem"/>.
+        /// </summary>
         public void LoadFavorites()
         {
             if (File.Exists(FAVORITES_PATH))
@@ -46,6 +61,9 @@ namespace WebBrowser.Controllers
             }
         }
 
+        /// <summary>
+        /// Method that saves into the .xml file the <seealso cref="Models.Favorites"/> attribute
+        /// </summary>
         public void SaveFavorites()
         {
             Stream stream = File.Open(FAVORITES_PATH, FileMode.OpenOrCreate);
@@ -56,22 +74,40 @@ namespace WebBrowser.Controllers
             stream.Close();
         }
 
+        /// <summary>
+        /// Methods that adds a given url and a given name as a <seealso cref="Models.FavoriteItem"/> in the <seealso cref="Models.Favorites"/> attribute of this class
+        /// </summary>
+        /// <param name="address">String acting as a webpage url</param>
+        /// <param name="name">Name of this webpage</param>
         public void AddToFavorites(string address, string name)
         {
             this.Favorites.FavoritesList.Add(new Models.FavoriteItem(address, name));
             this.SaveFavorites();
         }
 
+        /// <summary>
+        /// Methods that returns the number of favorites by accessing the count attribute of the list of <seealso cref="Models.FavoriteItem"/> stored in the <seealso cref="Models.Favorites"/> class attribute.
+        /// </summary>
+        /// <returns><seealso cref="int"/>: Number of favorites</returns>
         public int NumberOfFavorites()
         {
             return this.Favorites.FavoritesList.Count;
         }
 
+        /// <summary>
+        /// Returns the list of favorites
+        /// </summary>
+        /// <returns><seealso cref="ArrayList"/>: List of <seealso cref="FavoriteItem"/></returns>
         public ArrayList ListOfFavoriteItems()
         {
             return this.Favorites.FavoritesList;
         }
 
+        /// <summary>
+        /// Change a favorite data of a given index with a given <seealso cref="Models.FavoriteItem"/> instance and save the new list to disk.
+        /// </summary>
+        /// <param name="favoriteItem">Instance of a <seealso cref="Models.FavoriteItem"/></param>
+        /// <param name="index">Index to which the change should be applied</param>
         public void UpdateFavorite(FavoriteItem favoriteItem, int index)
         {
             if (index >= 0 && index < this.Favorites.FavoritesList.Count)
@@ -81,6 +117,10 @@ namespace WebBrowser.Controllers
             }
         }
 
+        /// <summary>
+        /// Delete a given favorite at a given index.
+        /// </summary>
+        /// <param name="objIndex">Index of the <seealso cref="Models.FavoriteItem"/> to delete</param>
         internal void DeleteFavorite(int objIndex)
         {
             if (objIndex >= 0 && objIndex < this.Favorites.FavoritesList.Count)

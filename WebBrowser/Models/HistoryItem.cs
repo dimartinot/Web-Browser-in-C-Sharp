@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 
 namespace WebBrowser.Models
 {
+    /// <summary>
+    /// HistoryItem model class embedding a history address and access date
+    /// </summary>
     [Serializable()]
     public class HistoryItem
     {

@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 
 namespace WebBrowser.Models
 {
+    /// <summary>
+    /// HomeItem model class embedding the HomePage address
+    /// </summary>
     [Serializable()]
     public class HomeItem
     {

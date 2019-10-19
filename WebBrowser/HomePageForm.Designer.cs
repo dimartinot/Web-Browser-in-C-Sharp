@@ -117,7 +117,7 @@
             this.confirmbuttonChangeHomePage.TabIndex = 0;
             this.confirmbuttonChangeHomePage.Text = "Confirm";
             this.confirmbuttonChangeHomePage.UseVisualStyleBackColor = true;
-            this.confirmbuttonChangeHomePage.Click += new System.EventHandler(this.confirmbuttonChangeHomePage_Click);
+            this.confirmbuttonChangeHomePage.Click += new System.EventHandler(this.ConfirmbuttonChangeHomePage_Click);
             // 
             // cancelbuttonChangeHomePage
             // 
@@ -128,7 +128,7 @@
             this.cancelbuttonChangeHomePage.TabIndex = 1;
             this.cancelbuttonChangeHomePage.Text = "Cancel";
             this.cancelbuttonChangeHomePage.UseVisualStyleBackColor = true;
-            this.cancelbuttonChangeHomePage.Click += new System.EventHandler(this.cancelbuttonChangeHomePage_Click);
+            this.cancelbuttonChangeHomePage.Click += new System.EventHandler(this.CancelbuttonChangeHomePage_Click);
             // 
             // tableLayoutPanel2
             // 

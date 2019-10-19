@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 
 namespace WebBrowser.Models
 {
+    /// <summary>
+    /// Basic page model
+    /// </summary>
     public class Page
     {
         public String Address { set; get;  }

@@ -7,17 +7,30 @@ using System.Windows.Forms;
 
 
 namespace WebBrowser
-{
+{    
+    /// <summary>
+    /// Class of the History form, displaying the list of all visiting webpages
+    /// </summary>
     public class HistoryForm : Form
     {
         private Label label1;
         private TextBox sortingTextBox;
         private ListBox listBox;
 
+        /// <summary>
+        /// <seealso cref="Controllers.HistoryController"/> instance to provide the History intelligence
+        /// </summary>
         private Controllers.HistoryController HistoryController { get; set; }
-
+        /// <summary>
+        /// <seealso cref="MainWindow"/> instance to be able to interact back with it (for the display of a given favorite)
+        /// </summary>
         private MainWindow MainWindowRef { get; set; }
 
+        /// <summary>
+        /// Class constructor calling the <seealso cref="InitializeComponent()"/> method (automatically generated).
+        /// </summary>
+        /// <param name="favoritesController"><seealso cref="Controllers.FavoritesController"/> instance</param>
+        /// <param name="mainWindow"><seealso cref="MainWindow"/> instance</param>
         public HistoryForm(Controllers.HistoryController historyController, MainWindow MainWindowRef)
         {
             this.HistoryController = historyController;
@@ -25,6 +38,9 @@ namespace WebBrowser
             this.InitializeComponent();
         }
 
+        /// <summary>
+        /// Retrieve the current history from the controller, calls the <seealso cref="PopulateListBox(Models.History)"/> method and displays the current form
+        /// </summary>
         public void ShowForm()
         {
             
@@ -46,6 +62,10 @@ namespace WebBrowser
             
         }
 
+        /// <summary>
+        /// Changes the content of the listBox based on the <seealso cref="Models.History"/> class instance provided
+        /// </summary>
+        /// <param name="history"></param>
         public void PopulateListBox(Models.History history)
         {
             listBox.Items.Clear();
@@ -55,6 +75,9 @@ namespace WebBrowser
             }
         }
 
+        /// <summary>
+        /// Automatically generated method that holds all the design information of the current form
+        /// </summary>
         private void InitializeComponent()
         {
             this.listBox = new System.Windows.Forms.ListBox();
@@ -98,23 +121,27 @@ namespace WebBrowser
             this.Controls.Add(this.label1);
             this.Controls.Add(this.listBox);
             this.Name = "HistoryForm";
-            this.Load += new System.EventHandler(this.HistoryForm_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
-        private void HistoryForm_Load(object sender, EventArgs e)
-        {
-
-        }
-
+        /// <summary>
+        /// Method called when the sorting pattern of the input box has been changed. Calls the <seealso cref="Controllers.HistoryController.SortHistory(string)"/> method to sort the History according to this pattern and populates the ListBox with the newly sorted History
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void SortingTextBox_TextChanged(object sender, EventArgs e)
         {
             Models.History history = this.HistoryController.SortHistory(this.sortingTextBox.Text);
             this.PopulateListBox(history);
         }
 
+        /// <summary>
+        /// Method called when a click happens on a given item of the listBox. Loads the page clicked and closes the current form
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void ListBox_SelectedIndexChanged(object sender, EventArgs e)
         {
             String itemContent = this.listBox.SelectedItem.ToString();

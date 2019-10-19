@@ -8,6 +8,9 @@ using System.Windows.Forms;
 
 namespace WebBrowser
 {
+    /// <summary>
+    /// Class of the FavoriteList form, displaying two inputs for the user to enter the favorite name and address
+    /// </summary>
     class FavoritesForm : Form
     {
         private TextBox favoriteAddingAddress;
@@ -17,14 +20,24 @@ namespace WebBrowser
         private Button addFavoritesButton;
         private TableLayoutPanel tableLayoutPanel1;
 
+        /// <summary>
+        /// <seealso cref="Controllers.FavoritesController"/> instance to provide the Favorites intelligence
+        /// </summary>
         private Controllers.FavoritesController FavoritesController { set; get; }
 
+        /// <summary>
+        /// Class constructor calling the <seealso cref="InitializeComponent()"/> method (automatically generated).
+        /// </summary>
+        /// <param name="favoritesController"><seealso cref="Controllers.FavoritesController"/> instance</param>
         public FavoritesForm(Controllers.FavoritesController favoritesController)
         {
             InitializeComponent();
             this.FavoritesController = favoritesController;
         }
 
+        /// <summary>
+        /// Displays the current form and set the default favorite address input text as the current web page address
+        /// </summary>
         public void ShowForm(string addressToAdd)
         {
 
@@ -34,6 +47,9 @@ namespace WebBrowser
 
         }
 
+        /// <summary>
+        /// Automatically generated method that holds all the design information of the current form
+        /// </summary>
         private void InitializeComponent()
         {
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
@@ -65,7 +81,6 @@ namespace WebBrowser
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel1.Size = new System.Drawing.Size(261, 287);
             this.tableLayoutPanel1.TabIndex = 0;
-            this.tableLayoutPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel1_Paint);
             // 
             // labelAddingFavoriteName
             // 
@@ -123,29 +138,17 @@ namespace WebBrowser
             this.ClientSize = new System.Drawing.Size(284, 286);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Name = "FavoritesForm";
-            this.Load += new System.EventHandler(this.FavoritesForm_Load);
-            this.Click += new System.EventHandler(this.FavoritesForm_Click);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
             this.ResumeLayout(false);
 
         }
 
-        private void FavoritesForm_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void tableLayoutPanel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void FavoritesForm_Click(object sender, EventArgs e)
-        {
-
-        }
-
+        /// <summary>
+        /// Method that is called when the AddFavorites is being clicked: add the written page address and name as a new favorite
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void AddFavoritesButton_Click(object sender, EventArgs e)
         {
             if (this.favoriteAddingAddress.Text != "" && this.favoriteAddingName.Text != "")

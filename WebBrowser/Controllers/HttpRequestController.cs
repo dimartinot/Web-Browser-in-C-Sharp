@@ -7,15 +7,29 @@ using System.Net.Http;
 
 namespace WebBrowser.Controllers
 {
+    /// <summary>
+    /// Controller class responsible for the intelligence code linked to the HttpRequest management
+    /// </summary>
     class HttpRequestController
     {
+        /// <summary>
+        /// The HttpClient attribute, setup as static and readonly to be sure to only have one instance generated per App
+        /// </summary>
         private static readonly HttpClient client = new HttpClient();
 
+        /// <summary>
+        /// The class constructor, empty
+        /// </summary>
         public HttpRequestController() {
 
         }
 
-        public async Task<string> sendGetAsync(string address)
+        /// <summary>
+        /// Async method retrieving the string content of the HTML page to load
+        /// </summary>
+        /// <param name="address">Url of the Web Page to access passed as a string</param>
+        /// <returns>A Task embedding the string content of the HTML page to load</returns>
+        public async Task<string> SendGetAsync(string address)
         {
             try
             {

@@ -87,8 +87,14 @@ namespace WebBrowser.Controllers
         /// <param name="name">Name of this webpage</param>
         public void AddToFavorites(string address, string name)
         {
-            this.Favorites.FavouritesList.Add(new Models.FavouriteItem(address, name));
-            this.SaveFavorites();
+            if (address != null & name != null)
+            {
+                this.Favorites.FavouritesList.Add(new Models.FavouriteItem(address, name));
+                this.SaveFavorites();
+            } else
+            {
+                throw new ArgumentNullException();
+            }
         }
 
         /// <summary>
@@ -116,6 +122,10 @@ namespace WebBrowser.Controllers
         /// <param name="index">Index to which the change should be applied</param>
         public void UpdateFavorite(FavouriteItem favoriteItem, int index)
         {
+            if (favoriteItem == null)
+            {
+                throw new ArgumentNullException();
+            }
             if (index >= 0 && index < this.Favorites.FavouritesList.Count)
             {
                 this.Favorites[index] = favoriteItem;
@@ -130,7 +140,7 @@ namespace WebBrowser.Controllers
         /// Delete a given favorite at a given index.
         /// </summary>
         /// <param name="objIndex">Index of the <seealso cref="Models.FavouriteItem"/> to delete</param>
-        public void DeleteFavorite(int objIndex)
+        public void DeleteFavourite(int objIndex)
         {
             if (objIndex >= 0 && objIndex < this.Favorites.FavouritesList.Count)
             {

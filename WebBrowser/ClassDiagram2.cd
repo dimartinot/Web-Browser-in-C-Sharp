@@ -87,7 +87,7 @@
   <Class Name="WebBrowser.HistoryForm" Collapsed="true">
     <Position X="14.5" Y="4.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAABAAQABAABAAAAAAAABCAAAAgAAAAAgAAAAAAAI=</HashCode>
+      <HashCode>AAAAABAAQABAABAAAAAAAABCAAAIgAAAAAgAAAAAAAI=</HashCode>
       <FileName>HistoryForm.cs</FileName>
     </TypeIdentifier>
   </Class>
@@ -120,7 +120,7 @@
     </TypeIdentifier>
   </Class>
   <Class Name="WebBrowser.Models.FavouriteItem" Collapsed="true">
-    <Position X="25.5" Y="5" Width="1.5" />
+    <Position X="25.5" Y="3" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAEgAAAAAQAAAAAAAACAAAAAAAAAAA=</HashCode>
       <FileName>Models\FavouriteItem.cs</FileName>
@@ -148,7 +148,7 @@
     </TypeIdentifier>
   </Class>
   <Class Name="WebBrowser.Models.HistoryItem" Collapsed="true">
-    <Position X="27.5" Y="5" Width="1.5" />
+    <Position X="27.5" Y="3" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAQAAAAAAAAAAAAAAACAAAAAAAAAAA=</HashCode>
       <FileName>Models\HistoryItem.cs</FileName>

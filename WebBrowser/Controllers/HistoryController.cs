@@ -43,6 +43,11 @@ namespace WebBrowser.Controllers
             return history.HistoryOfAddresses;
         }
 
+        public void EmptyHistory()
+        {
+            this.CurrentHistory = new History();
+        }
+
         /// <summary>
         /// Method that sorts the History according to an input pattern. Only matching HistoryItem are retrieved by this method
         /// </summary>
@@ -127,14 +132,15 @@ namespace WebBrowser.Controllers
         /// Method that adds an address to the <seealso cref="Models.History"/> list attribute
         /// </summary>
         /// <param name="address">Address to add as an history attribute</param>
-        public void AddAddress(string address)
+        public void AddAddress(string address, bool toSave = true)
         {
             if (address == null)
             {
                 throw new Exceptions.InvalidValuedVariableException("Address to add cannot be null.");
             }
             this.CurrentHistory.HistoryOfAddresses.Add(new Models.HistoryItem(address, DateTime.Now));
-            this.SaveHistory();
+            if (toSave)
+                this.SaveHistory();
         }
 
         /// <summary>
@@ -144,7 +150,10 @@ namespace WebBrowser.Controllers
         /// <returns><seealso cref="Models.HistoryItem"/>: Item to return</returns>
         public Models.HistoryItem GetAddressAt(int index)
         {
-            return this.CurrentHistory[index];
+            if (index >= 0 && index <= this.CurrentHistory.Count())
+                return this.CurrentHistory[index];
+            else
+                throw new IndexOutOfRangeException();
         }
 
         /// <summary>

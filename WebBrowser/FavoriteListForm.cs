@@ -321,7 +321,7 @@ namespace WebBrowser
             {
                 Models.FavouriteItem obj = (Models.FavouriteItem)this.listFavoriteItems.SelectedItem;
                 int objIndex = this.FavoritesController.ListOfFavoriteItems().IndexOf(obj);
-                this.FavoritesController.DeleteFavorite(objIndex);
+                this.FavoritesController.DeleteFavourite(objIndex);
                 if (objIndex >=0 && objIndex < this.listFavoriteItems.Items.Count)
                 {
                     this.listFavoriteItems.Items.RemoveAt(objIndex);

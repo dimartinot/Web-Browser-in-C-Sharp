@@ -56,7 +56,7 @@ namespace WebBrowser.Controllers
                     var responseBody = await httpRequestController.SendGetAsync(address);
                     return new Models.Page(address, responseBody);
                 }
-                catch (Exceptions.PageNotFoundException)
+                catch (Exceptions.PageNotFoundException e)
                 {
                     return new Models.NotFoundPage(address);
                 }

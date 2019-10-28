@@ -50,6 +50,13 @@ namespace WebBrowser
         /// </summary>
         public MainWindow()
         {
+            Console.WriteLine("Running tests at launch...");
+            Tests.UnitTest.TestFavoritesController();
+            Tests.UnitTest.TestHistoryController();
+            Tests.UnitTest.TestHomePageController();
+            Tests.UnitTest.TestNavigationControllerAsync();
+
+
             InitializeComponent();
             this.NavigationController = new Controllers.NavigationController();
             this.HistoryController = new Controllers.HistoryController();

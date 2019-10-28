@@ -47,9 +47,10 @@ namespace WebBrowser.Controllers
                         throw new Exceptions.PageNotFoundException(String.Format("Error: page '{0}' not found", address));
 
                     case System.Net.HttpStatusCode.InternalServerError:
-                        throw new Exceptions.ServerErrorException(String.Format("Error: acces to page '{0}' led to internal server error", address));
+                        throw new Exceptions.ServerErrorException(String.Format("Error: access to page '{0}' led to internal server error", address));
 
                     case System.Net.HttpStatusCode.BadRequest:
+
                         throw new Exceptions.BadRequestException(String.Format("Error: page '{0}' returned a Bad Request HTTP Error code", address));
 
                     case System.Net.HttpStatusCode.Forbidden:
@@ -70,9 +71,6 @@ namespace WebBrowser.Controllers
             {
                 System.Console.WriteLine(String.Format("Error {0}: Unsupported error triggered when loading '{1}'", e.InnerException.Message, address));
                 throw new Exceptions.UnsupportedErrorException(e.Message);
-            } catch (Exception e)
-            {
-                throw new Exceptions.PageNotFoundException(String.Format("Error: page '{0}' not found", address));
             }
         }
 

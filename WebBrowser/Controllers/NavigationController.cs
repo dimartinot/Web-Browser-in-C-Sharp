@@ -43,7 +43,11 @@ namespace WebBrowser.Controllers
         /// <returns><seealso cref="Task{Models.Page}"/>: loaded page returned in a Task. Can also return any error page depending on the HttpError exception thrown by the <seealso cref="HttpRequestController"/></returns>
         public async Task<Models.Page> LoadPage(string address, Models.Page formerPage)
         {
-            backwardPages.Push(formerPage);
+
+            if (formerPage != null)
+            {
+                backwardPages.Push(formerPage);
+            }
             if (address != null && address != "")
             {
 
@@ -87,10 +91,20 @@ namespace WebBrowser.Controllers
         /// <returns>The Page instance that came before the current page. If no page before, returns the currentPage</returns>
         public Models.Page BackwardPage(Models.Page currentPage)
         {
+            if (currentPage == null)
+            {
+                throw new Exceptions.InvalidValuedVariableException("currentPage cannot be null.");
+            }
+
             if (backwardPages.Count != 0)
             {
                 forwardPages.Push(currentPage);
-                return backwardPages.Pop();
+                Models.Page toReturn = backwardPages.Pop();
+                if (toReturn == null)
+                {
+                    throw new Exceptions.InvalidValuedVariableException("Returned Page cannot be null.");
+                }
+                return toReturn;
             } else
             {
                 return currentPage;
@@ -104,10 +118,19 @@ namespace WebBrowser.Controllers
         /// <returns><seealso cref="Models.Page"/>: the Page instance that came after the current page. If no page after, returns the currentPage</returns>
         public Models.Page ForwardPage(Models.Page currentPage)
         {
+            if (currentPage == null)
+            {
+                throw new Exceptions.InvalidValuedVariableException("currentPage cannot be null.");
+            }
             if (forwardPages.Count != 0)
             {
                 backwardPages.Push(currentPage);
-                return forwardPages.Pop();
+                Models.Page toReturn = forwardPages.Pop();
+                if (toReturn == null)
+                {
+                    throw new Exceptions.InvalidValuedVariableException("Returned Page cannot be null.");
+                }
+                return toReturn;
             }
             else
             {
@@ -123,6 +146,10 @@ namespace WebBrowser.Controllers
         /// <returns><seealso cref="string"/>: title of the HTML Page</returns>
         public string GetPageTitle(Models.Page currentPage)
         {
+            if (currentPage == null)
+            {
+                throw new Exceptions.InvalidValuedVariableException("currentPage cannot be null.");
+            }
             return Regex.Match(currentPage.Content, @"\<title\b[^>]*\>\s*(?<Title>[\s\S]*?)\</title\>", RegexOptions.IgnoreCase).Groups["Title"].Value;
         }
 

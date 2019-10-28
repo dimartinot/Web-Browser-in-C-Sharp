@@ -45,7 +45,7 @@ namespace WebBrowser
         {
             
             this.Text = String.Format("History: {0} elements", this.HistoryController.NumberOfAddresses());
-            this.SetBounds(10, 10, 400, 400);
+            //this.SetBounds(10, 10, 400, 400);
             /*
             listBox.Dock = DockStyle.Fill;
             listBox.Size = new System.Drawing.Size(200, 200);
@@ -92,7 +92,7 @@ namespace WebBrowser
             this.listBox.ItemHeight = 16;
             this.listBox.Location = new System.Drawing.Point(0, 62);
             this.listBox.Name = "listBox";
-            this.listBox.Size = new System.Drawing.Size(284, 196);
+            this.listBox.Size = new System.Drawing.Size(353, 196);
             this.listBox.TabIndex = 0;
             this.listBox.SelectedIndexChanged += new System.EventHandler(this.ListBox_SelectedIndexChanged);
             // 
@@ -110,17 +110,18 @@ namespace WebBrowser
             this.sortingTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.sortingTextBox.Location = new System.Drawing.Point(0, 16);
             this.sortingTextBox.Name = "sortingTextBox";
-            this.sortingTextBox.Size = new System.Drawing.Size(284, 22);
+            this.sortingTextBox.Size = new System.Drawing.Size(353, 22);
             this.sortingTextBox.TabIndex = 2;
             this.sortingTextBox.TextChanged += new System.EventHandler(this.SortingTextBox_TextChanged);
             // 
             // HistoryForm
             // 
-            this.ClientSize = new System.Drawing.Size(284, 261);
+            this.ClientSize = new System.Drawing.Size(355, 261);
             this.Controls.Add(this.sortingTextBox);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.listBox);
             this.Name = "HistoryForm";
+            this.Load += new System.EventHandler(this.HistoryForm_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -148,6 +149,11 @@ namespace WebBrowser
             String address = itemContent.Split('\t')[1];
             this.MainWindowRef.LoadAddressFromOutside(address);
             this.Close();
+        }
+
+        private void HistoryForm_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

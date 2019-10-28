@@ -49,7 +49,7 @@ namespace WebBrowser
         }
 
         /// <summary>
-        /// Loads the <seealso cref="Models.FavoriteItem"/> in the ComboBox
+        /// Loads the <seealso cref="Models.FavouriteItem"/> in the ComboBox
         /// </summary>
         public void LoadFavoritesInComboBox()
         {
@@ -59,9 +59,9 @@ namespace WebBrowser
                 {
                     this.listFavoriteItems.Items.Remove(obj);
                 }
-                foreach (Models.FavoriteItem favItem in this.FavoritesController.ListOfFavoriteItems())
+                foreach (Models.FavouriteItem favItem in this.FavoritesController.ListOfFavoriteItems())
                 {
-                    this.listFavoriteItems.Items.Add(new Models.FavoriteItem(favItem.Address, favItem.Name));
+                    this.listFavoriteItems.Items.Add(new Models.FavouriteItem(favItem.Address, favItem.Name));
                 }
 
             }
@@ -262,7 +262,7 @@ namespace WebBrowser
         {
             if (this.listFavoriteItems.SelectedItem != null)
             {
-                Models.FavoriteItem obj = (Models.FavoriteItem)this.listFavoriteItems.SelectedItem;
+                Models.FavouriteItem obj = (Models.FavouriteItem)this.listFavoriteItems.SelectedItem;
                 this.MainWindow.LoadAddressFromOutside(obj.Address);
                 this.Close();
             }
@@ -277,7 +277,7 @@ namespace WebBrowser
         {
             if (this.listFavoriteItems.SelectedItem != null)
             {
-                Models.FavoriteItem obj = (Models.FavoriteItem)this.listFavoriteItems.SelectedItem;
+                Models.FavouriteItem obj = (Models.FavouriteItem)this.listFavoriteItems.SelectedItem;
                 int objIndex = this.FavoritesController.ListOfFavoriteItems().IndexOf(obj);
                 obj.Address = this.editFavoriteAddressInput.Text;
                 obj.Name = this.editFavoriteNameInput.Text;
@@ -304,7 +304,7 @@ namespace WebBrowser
         {
             if (this.listFavoriteItems.SelectedItem != null)
             {
-                Models.FavoriteItem obj = (Models.FavoriteItem)this.listFavoriteItems.SelectedItem;
+                Models.FavouriteItem obj = (Models.FavouriteItem)this.listFavoriteItems.SelectedItem;
                 this.editFavoriteAddressInput.Text = obj.Address;
                 this.editFavoriteNameInput.Text = obj.Name;
             }
@@ -319,7 +319,7 @@ namespace WebBrowser
         {
             if (this.listFavoriteItems.SelectedItem != null)
             {
-                Models.FavoriteItem obj = (Models.FavoriteItem)this.listFavoriteItems.SelectedItem;
+                Models.FavouriteItem obj = (Models.FavouriteItem)this.listFavoriteItems.SelectedItem;
                 int objIndex = this.FavoritesController.ListOfFavoriteItems().IndexOf(obj);
                 this.FavoritesController.DeleteFavorite(objIndex);
                 if (objIndex >=0 && objIndex < this.listFavoriteItems.Items.Count)

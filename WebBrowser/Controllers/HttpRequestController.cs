@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Net.Http;
+using System.Net.Security;
 
 namespace WebBrowser.Controllers
 {
@@ -16,6 +17,8 @@ namespace WebBrowser.Controllers
         /// The HttpClient attribute, setup as static and readonly to be sure to only have one instance generated per App
         /// </summary>
         private static readonly HttpClient client = new HttpClient();
+
+        //System.Net.ServicePointManager.SecurityProtocol = SecurityProtocolType.Ss13 | SecurityProtocolType.Tls | SecurityProtocolType.Tls11 | SecurityProtocolType.Tls12;
 
         /// <summary>
         /// The class constructor, empty
@@ -31,6 +34,10 @@ namespace WebBrowser.Controllers
         /// <returns>A Task embedding the string content of the HTML page to load</returns>
         public async Task<string> SendGetAsync(string address)
         {
+            if (address == null)
+            {
+                throw new Exceptions.InvalidValuedVariableException("Address to add cannot be null.");
+            }
             try
             {
                 HttpResponseMessage response = await client.GetAsync(address);
@@ -54,12 +61,14 @@ namespace WebBrowser.Controllers
                         return responseBody;
 
                     default:
-                        throw new Exceptions.UnsupportedErrorException(String.Format("Unsupported error triggered when loading '{0}'", address));
+                        System.Console.WriteLine(String.Format("Error {0}: Unsupported error triggered when loading '{1}'", response.StatusCode, address));
+                        throw new Exceptions.UnsupportedErrorException(String.Format("Error {0}: Unsupported error triggered when loading '{1}'", response.StatusCode, address));
 
                 }
 
             } catch (HttpRequestException e)
             {
+                System.Console.WriteLine(String.Format("Error {0}: Unsupported error triggered when loading '{1}'", e.InnerException.Message, address));
                 throw new Exceptions.UnsupportedErrorException(e.Message);
             } catch (Exception e)
             {

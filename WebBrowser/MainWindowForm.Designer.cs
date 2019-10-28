@@ -52,7 +52,7 @@
             this.tableLayoutPanel1.ColumnCount = 3;
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 11.86161F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 88.13838F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 191F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 192F));
             this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel2, 0, 0);
             this.tableLayoutPanel1.Controls.Add(this.addressTextBox, 1, 0);
             this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel4, 2, 0);
@@ -131,7 +131,7 @@
             this.addressTextBox.Location = new System.Drawing.Point(129, 3);
             this.addressTextBox.Name = "addressTextBox";
             this.addressTextBox.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.addressTextBox.Size = new System.Drawing.Size(934, 29);
+            this.addressTextBox.Size = new System.Drawing.Size(933, 29);
             this.addressTextBox.TabIndex = 0;
             this.addressTextBox.KeyDown += new System.Windows.Forms.KeyEventHandler(this.AddressTextBox_KeyDown);
             // 
@@ -144,7 +144,7 @@
             this.tableLayoutPanel4.Controls.Add(this.comboBox1, 2, 0);
             this.tableLayoutPanel4.Controls.Add(this.homeButton, 0, 0);
             this.tableLayoutPanel4.Controls.Add(this.starButton, 1, 0);
-            this.tableLayoutPanel4.Location = new System.Drawing.Point(1066, 0);
+            this.tableLayoutPanel4.Location = new System.Drawing.Point(1065, 0);
             this.tableLayoutPanel4.Margin = new System.Windows.Forms.Padding(0);
             this.tableLayoutPanel4.Name = "tableLayoutPanel4";
             this.tableLayoutPanel4.RowCount = 1;

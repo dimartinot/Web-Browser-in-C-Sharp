@@ -50,6 +50,10 @@ namespace WebBrowser.Controllers
         /// <returns><seealso cref="Models.History"/>: History with filtered <seealso cref="Models.HistoryItem"/></returns>
         public Models.History SortHistory(string sortingPattern)
         {
+            if (sortingPattern == null)
+            {
+                throw new Exceptions.InvalidValuedVariableException("Sorting Pattern value cannot be null");
+            }
             //Using LINQ syntax for better readability and efficiency
             IEnumerable<Models.HistoryItem> sortedHistoryItems = from Models.HistoryItem address in this.CurrentHistory.HistoryOfAddresses where address.Address.Contains(String.Format("{0}", sortingPattern)) select address;
 
@@ -99,6 +103,10 @@ namespace WebBrowser.Controllers
 
                 this.CurrentHistory = new Models.History();
             }
+            if (this.CurrentHistory == null)
+            {
+                throw new Exceptions.InvalidValuedVariableException("CurrentHistory has not been correctly loaded.");
+            }
         }
 
         /// <summary>
@@ -121,6 +129,10 @@ namespace WebBrowser.Controllers
         /// <param name="address">Address to add as an history attribute</param>
         public void AddAddress(string address)
         {
+            if (address == null)
+            {
+                throw new Exceptions.InvalidValuedVariableException("Address to add cannot be null.");
+            }
             this.CurrentHistory.HistoryOfAddresses.Add(new Models.HistoryItem(address, DateTime.Now));
             this.SaveHistory();
         }

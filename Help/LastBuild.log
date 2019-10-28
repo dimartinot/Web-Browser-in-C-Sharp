@@ -1,0 +1,393 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shfbBuild product="Sandcastle Help File Builder and Tools" version="2019.9.15.0" projectFile="H:\Documents\Visual Studio 2017\Projects\WebBrowser\Web-Broswer-in-C-\webbrowser_doc.shfbproj" started="19/10/2019 16:56:56">
+<buildStep step="Initializing">
+Finding tools...
+The Sandcastle tools are located in &#39;C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\&#39;
+Locating components in the following folder(s):
+    H:\Documents\Visual Studio 2017\Projects\WebBrowser\Web-Broswer-in-C-
+    C:\ProgramData\EWSoftware\Sandcastle Help File Builder\Components and Plug-Ins\
+    C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\
+Using framework reflection data for &#39;.NET Framework 4.5&#39; located in &#39;C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\Data\.NETFramework&#39;
+Using presentation style &#39;VS2013&#39; located in &#39;C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013&#39;
+Loading and initializing plug-ins...
+Lightweight Website Style Version 2019.9.15.0
+Copyright &#169; 2006-2019, Eric Woodruff, All Rights Reserved
+Portions Copyright &#169; 2014, Sam Harwell, All Rights Reserved
+-------------------------------
+Clearing any prior web/markdown output...
+</buildStep>
+<buildStep step="ValidatingDocumentationSources">
+Validating and copying documentation source information
+Source: H:\Documents\Visual Studio 2017\Projects\WebBrowser\Web-Broswer-in-C-\WebBrowser\WebBrowser.csproj
+    Found project &#39;H:\Documents\Visual Studio 2017\Projects\WebBrowser\Web-Broswer-in-C-\WebBrowser\WebBrowser.csproj&#39;
+
+Parsing project files
+    Found assembly &#39;H:\Documents\Visual Studio 2017\Projects\WebBrowser\Web-Broswer-in-C-\WebBrowser\bin\Debug\WebBrowser.exe&#39;
+
+References to include:
+    H:\Documents\Visual Studio 2017\Projects\WebBrowser\Web-Broswer-in-C-\WebBrowser\bin\Debug\WebBrowser.exe
+    Microsoft.VisualStudio.Designer.Interfaces, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+    WebBrowser
+SHFB: Warning BE0062: No documentation source XML comments files found.  The help file will not contain any member comments.
+</buildStep>
+<buildStep step="GenerateSharedContent">
+Generating shared content files (en-US, English (United States))...
+<plugIn name="Lightweight Website Style" behavior="After" priority="1000">
+</plugIn>    Last step completed in 00:00:00.0324
+</buildStep>
+<buildStep step="GenerateApiFilter">
+Generating API filter for MRefBuilder...
+    Last step completed in 00:00:00.0000
+</buildStep>
+<buildStep step="GenerateReflectionInfo">
+Generating reflection information...
+[C:\Program Files (x86)\MSBuild\14.0\bin\amd64\MSBuild.exe - GenerateRefInfo.proj]
+Build started 19/10/2019 16:56:58.
+Project &quot;H:\Documents\Visual Studio 2017\Projects\WebBrowser\Web-Broswer-in-C-\Help\Working\GenerateRefInfo.proj&quot; on node 1 (default targets).
+PrepareForBuild:
+  Creating directory &quot;obj\Debug\&quot;.
+GenerateRefInfo:
+  MRefBuilder (v2019.9.15.0)
+  Copyright &#184; 2006-2019, Microsoft Corporation, All Rights Reserved.
+  Portions Copyright &#184; 2006-2019, Eric Woodruff, All Rights Reserved.
+  No source code context base path specified.  Source context information is unavailable.
+  Loaded 1 assemblies for reflection and 3 dependency assemblies.
+  Wrote information on 4 namespaces, 17 types, and 57 members
+  Copying file from &quot;reflection.org&quot; to &quot;reflection.all&quot;.
+  XslTransform (v2019.9.15.0)
+  Copyright &#184; 2006-2019, Microsoft Corporation, All Rights Reserved.
+  Portions Copyright &#184; 2006-2019, Eric Woodruff, All Rights Reserved.
+  Applying XSL transformation &#39;C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\ProductionTransforms\MergeDuplicates.xsl&#39;.
+Done Building Project &quot;H:\Documents\Visual Studio 2017\Projects\WebBrowser\Web-Broswer-in-C-\Help\Working\GenerateRefInfo.proj&quot; (default targets).
+
+Build succeeded.
+
+Time Elapsed 00:00:03.19
+    Last step completed in 00:00:03.7245
+</buildStep>
+<buildStep step="TransformReflectionInfo">
+Transforming reflection output...
+[C:\Program Files (x86)\MSBuild\14.0\bin\amd64\MSBuild.exe - TransformManifest.proj]
+Build started 19/10/2019 16:57:01.
+Project &quot;H:\Documents\Visual Studio 2017\Projects\WebBrowser\Web-Broswer-in-C-\Help\Working\TransformManifest.proj&quot; on node 1 (default targets).
+TransformManifest:
+  XslTransform (v2019.9.15.0)
+  Copyright &#184; 2006-2019, Microsoft Corporation, All Rights Reserved.
+  Portions Copyright &#184; 2006-2019, Eric Woodruff, All Rights Reserved.
+  Applying XSL transformation &#39;C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\\ProductionTransforms\ApplyVSDocModel.xsl&#39;.
+  Copying file from &quot;reflection.xml&quot; to &quot;reflection.nofilenames&quot;.
+  XslTransform (v2019.9.15.0)
+  Copyright &#184; 2006-2019, Microsoft Corporation, All Rights Reserved.
+  Portions Copyright &#184; 2006-2019, Eric Woodruff, All Rights Reserved.
+  Applying XSL transformation &#39;C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\ProductionTransforms\AddFilenames.xsl&#39;.
+  XslTransform (v2019.9.15.0)
+  Copyright &#184; 2006-2019, Microsoft Corporation, All Rights Reserved.
+  Portions Copyright &#184; 2006-2019, Eric Woodruff, All Rights Reserved.
+  Applying XSL transformation &#39;C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\ProductionTransforms\ReflectionToManifest.xsl&#39;.
+Done Building Project &quot;H:\Documents\Visual Studio 2017\Projects\WebBrowser\Web-Broswer-in-C-\Help\Working\TransformManifest.proj&quot; (default targets).
+
+Build succeeded.
+
+Time Elapsed 00:00:04.39
+    Last step completed in 00:00:04.9328
+</buildStep>
+<buildStep step="GenerateNamespaceSummaries">
+Generating namespace summary information...
+    Last step completed in 00:00:00.0768
+</buildStep>
+<buildStep step="CopyAdditionalContent">
+Copying additional content files...
+No additional content to copy
+    Last step completed in 00:00:00.0000
+</buildStep>
+<buildStep step="MergeTablesOfContents">
+Merging conceptual and additional tables of contents...
+    Last step completed in 00:00:00.0010
+</buildStep>
+<buildStep step="GenerateIntermediateTableOfContents">
+Generating intermediate table of contents file...
+[C:\Program Files (x86)\MSBuild\14.0\bin\amd64\MSBuild.exe - GenerateIntermediateTOC.proj]
+Build started 19/10/2019 16:57:07.
+Project &quot;H:\Documents\Visual Studio 2017\Projects\WebBrowser\Web-Broswer-in-C-\Help\Working\GenerateIntermediateTOC.proj&quot; on node 1 (default targets).
+GenerateIntermediateTOC:
+  XslTransform (v2019.9.15.0)
+  Copyright &#184; 2006-2019, Microsoft Corporation, All Rights Reserved.
+  Portions Copyright &#184; 2006-2019, Eric Woodruff, All Rights Reserved.
+  Applying XSL transformation &#39;C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\\ProductionTransforms\CreateVSToc.xsl&#39;.
+Done Building Project &quot;H:\Documents\Visual Studio 2017\Projects\WebBrowser\Web-Broswer-in-C-\Help\Working\GenerateIntermediateTOC.proj&quot; (default targets).
+
+Build succeeded.
+
+Time Elapsed 00:00:01.76
+Generating conceptual content intermediate TOC file...
+    Last step completed in 00:00:02.4230
+</buildStep>
+<buildStep step="CreateBuildAssemblerConfigs">
+Creating Sandcastle configuration files...
+    sandcastle.config
+    Last step completed in 00:00:00.2553
+</buildStep>
+<buildStep step="MergeCustomConfigs">
+Merging custom build component configurations
+H:\Documents\Visual Studio 2017\Projects\WebBrowser\Web-Broswer-in-C-\Help\Working\sandcastle.config
+  Updating reference topic configurations.
+  No conceptual content.  Removing conceptual content components.
+    Last step completed in 00:00:00.0521
+</buildStep>
+<buildStep step="BuildTopics">
+Building help topics...
+[C:\Program Files (x86)\MSBuild\14.0\bin\amd64\MSBuild.exe - BuildTopics.proj]
+Build started 19/10/2019 16:57:09.
+Project &quot;H:\Documents\Visual Studio 2017\Projects\WebBrowser\Web-Broswer-in-C-\Help\Working\BuildTopics.proj&quot; on node 1 (default targets).
+BuildTopics:
+  BuildAssembler (v2019.9.15.0)
+  Copyright &#184; 2006-2019, Microsoft Corporation, All Rights Reserved.
+  Portions Copyright &#184; 2006-2019, Eric Woodruff, All Rights Reserved.
+  Loading configuration...
+  ResolveReferenceLinksComponent: The member ID URL cache &#39;C:\Users\Admin\AppData\Local\EWSoftware\Sandcastle Help File Builder\Cache\MemberIdUrl.cache&#39; does not exist yet.  All IDs will be looked up in this build which will slow it down.
+  Processing topics...
+BuildAssembler : warning : ShowMissingComponent: [N:WebBrowser] Missing &lt;summary&gt; documentation [H:\Documents\Visual Studio 2017\Projects\WebBrowser\Web-Broswer-in-C-\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [T:WebBrowser.HistoryForm] Missing &lt;summary&gt; documentation [H:\Documents\Visual Studio 2017\Projects\WebBrowser\Web-Broswer-in-C-\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [T:WebBrowser.HistoryForm] Member ID URL resolver service failed.  No further look ups will be performed for this build. [H:\Documents\Visual Studio 2017\Projects\WebBrowser\Web-Broswer-in-C-\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : Reason: The underlying connection was closed: An unexpected error occurred on a send. [H:\Documents\Visual Studio 2017\Projects\WebBrowser\Web-Broswer-in-C-\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : Unable to read data from the transport connection: An existing connection was forcibly closed by the remote host. [H:\Documents\Visual Studio 2017\Projects\WebBrowser\Web-Broswer-in-C-\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : An existing connection was forcibly closed by the remote host [H:\Documents\Visual Studio 2017\Projects\WebBrowser\Web-Broswer-in-C-\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:WebBrowser.HistoryForm.#ctor(WebBrowser.Controllers.HistoryController,WebBrowser.MainWindow)] Missing &lt;param name=&quot;historyController&quot;/&gt; documentation [H:\Documents\Visual Studio 2017\Projects\WebBrowser\Web-Broswer-in-C-\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:WebBrowser.HistoryForm.#ctor(WebBrowser.Controllers.HistoryController,WebBrowser.MainWindow)] Missing &lt;param name=&quot;MainWindowRef&quot;/&gt; documentation [H:\Documents\Visual Studio 2017\Projects\WebBrowser\Web-Broswer-in-C-\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:WebBrowser.HistoryForm.PopulateListBox(WebBrowser.Models.History)] Missing &lt;summary&gt; documentation [H:\Documents\Visual Studio 2017\Projects\WebBrowser\Web-Broswer-in-C-\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:WebBrowser.HistoryForm.PopulateListBox(WebBrowser.Models.History)] Missing &lt;param name=&quot;history&quot;/&gt; documentation [H:\Documents\Visual Studio 2017\Projects\WebBrowser\Web-Broswer-in-C-\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:WebBrowser.HistoryForm.ShowForm] Missing &lt;summary&gt; documentation [H:\Documents\Visual Studio 2017\Projects\WebBrowser\Web-Broswer-in-C-\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [T:WebBrowser.HomePageForm] Missing &lt;summary&gt; documentation [H:\Documents\Visual Studio 2017\Projects\WebBrowser\Web-Broswer-in-C-\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:WebBrowser.HomePageForm.#ctor(WebBrowser.Controllers.HomePageController)] Missing &lt;param name=&quot;homePageController&quot;/&gt; documentation [H:\Documents\Visual Studio 2017\Projects\WebBrowser\Web-Broswer-in-C-\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [T:WebBrowser.MainWindow] Missing &lt;summary&gt; documentation [H:\Documents\Visual Studio 2017\Projects\WebBrowser\Web-Broswer-in-C-\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [P:WebBrowser.MainWindow.ActivePage] Missing &lt;summary&gt; documentation [H:\Documents\Visual Studio 2017\Projects\WebBrowser\Web-Broswer-in-C-\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [P:WebBrowser.MainWindow.History] Missing &lt;summary&gt; documentation [H:\Documents\Visual Studio 2017\Projects\WebBrowser\Web-Broswer-in-C-\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:WebBrowser.MainWindow.LoadAddressFromOutside(System.String)] Missing &lt;summary&gt; documentation [H:\Documents\Visual Studio 2017\Projects\WebBrowser\Web-Broswer-in-C-\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:WebBrowser.MainWindow.LoadAddressFromOutside(System.String)] Missing &lt;param name=&quot;address&quot;/&gt; documentation [H:\Documents\Visual Studio 2017\Projects\WebBrowser\Web-Broswer-in-C-\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [N:WebBrowser.Controllers] Missing &lt;summary&gt; documentation [H:\Documents\Visual Studio 2017\Projects\WebBrowser\Web-Broswer-in-C-\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [T:WebBrowser.Controllers.HistoryController] Missing &lt;summary&gt; documentation [H:\Documents\Visual Studio 2017\Projects\WebBrowser\Web-Broswer-in-C-\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:WebBrowser.Controllers.HistoryController.AddAddress(System.String)] Missing &lt;summary&gt; documentation [H:\Documents\Visual Studio 2017\Projects\WebBrowser\Web-Broswer-in-C-\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:WebBrowser.Controllers.HistoryController.AddAddress(System.String)] Missing &lt;param name=&quot;address&quot;/&gt; documentation [H:\Documents\Visual Studio 2017\Projects\WebBrowser\Web-Broswer-in-C-\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:WebBrowser.Controllers.HistoryController.GetAddressAt(System.Int32)] Missing &lt;summary&gt; documentation [H:\Documents\Visual Studio 2017\Projects\WebBrowser\Web-Broswer-in-C-\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:WebBrowser.Controllers.HistoryController.GetAddressAt(System.Int32)] Missing &lt;returns&gt; documentation [H:\Documents\Visual Studio 2017\Projects\WebBrowser\Web-Broswer-in-C-\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:WebBrowser.Controllers.HistoryController.GetAddressAt(System.Int32)] Missing &lt;param name=&quot;index&quot;/&gt; documentation [H:\Documents\Visual Studio 2017\Projects\WebBrowser\Web-Broswer-in-C-\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:WebBrowser.Controllers.HistoryController.GetCurrentHistory] Missing &lt;summary&gt; documentation [H:\Documents\Visual Studio 2017\Projects\WebBrowser\Web-Broswer-in-C-\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:WebBrowser.Controllers.HistoryController.GetCurrentHistory] Missing &lt;returns&gt; documentation [H:\Documents\Visual Studio 2017\Projects\WebBrowser\Web-Broswer-in-C-\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:WebBrowser.Controllers.HistoryController.GetListOfItemsFromHistory(WebBrowser.Models.History)] Missing &lt;summary&gt; documentation [H:\Documents\Visual Studio 2017\Projects\WebBrowser\Web-Broswer-in-C-\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:WebBrowser.Controllers.HistoryController.GetListOfItemsFromHistory(WebBrowser.Models.History)] Missing &lt;returns&gt; documentation [H:\Documents\Visual Studio 2017\Projects\WebBrowser\Web-Broswer-in-C-\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:WebBrowser.Controllers.HistoryController.GetListOfItemsFromHistory(WebBrowser.Models.History)] Missing &lt;param name=&quot;history&quot;/&gt; documentation [H:\Documents\Visual Studio 2017\Projects\WebBrowser\Web-Broswer-in-C-\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:WebBrowser.Controllers.HistoryController.ListOfHistoryItems] Missing &lt;summary&gt; documentation [H:\Documents\Visual Studio 2017\Projects\WebBrowser\Web-Broswer-in-C-\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:WebBrowser.Controllers.HistoryController.ListOfHistoryItems] Missing &lt;returns&gt; documentation [H:\Documents\Visual Studio 2017\Projects\WebBrowser\Web-Broswer-in-C-\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:WebBrowser.Controllers.HistoryController.LoadHistory] Missing &lt;summary&gt; documentation [H:\Documents\Visual Studio 2017\Projects\WebBrowser\Web-Broswer-in-C-\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:WebBrowser.Controllers.HistoryController.NumberOfAddresses] Missing &lt;summary&gt; documentation [H:\Documents\Visual Studio 2017\Projects\WebBrowser\Web-Broswer-in-C-\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:WebBrowser.Controllers.HistoryController.NumberOfAddresses] Missing &lt;returns&gt; documentation [H:\Documents\Visual Studio 2017\Projects\WebBrowser\Web-Broswer-in-C-\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:WebBrowser.Controllers.HistoryController.SaveHistory] Missing &lt;summary&gt; documentation [H:\Documents\Visual Studio 2017\Projects\WebBrowser\Web-Broswer-in-C-\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:WebBrowser.Controllers.HistoryController.SortHistory(System.String)] Missing &lt;summary&gt; documentation [H:\Documents\Visual Studio 2017\Projects\WebBrowser\Web-Broswer-in-C-\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:WebBrowser.Controllers.HistoryController.SortHistory(System.String)] Missing &lt;returns&gt; documentation [H:\Documents\Visual Studio 2017\Projects\WebBrowser\Web-Broswer-in-C-\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:WebBrowser.Controllers.HistoryController.SortHistory(System.String)] Missing &lt;param name=&quot;sortingPattern&quot;/&gt; documentation [H:\Documents\Visual Studio 2017\Projects\WebBrowser\Web-Broswer-in-C-\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [T:WebBrowser.Controllers.HomePageController] Missing &lt;summary&gt; documentation [H:\Documents\Visual Studio 2017\Projects\WebBrowser\Web-Broswer-in-C-\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:WebBrowser.Controllers.HomePageController.ChangeHomePage(System.String)] Missing &lt;summary&gt; documentation [H:\Documents\Visual Studio 2017\Projects\WebBrowser\Web-Broswer-in-C-\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:WebBrowser.Controllers.HomePageController.ChangeHomePage(System.String)] Missing &lt;param name=&quot;address&quot;/&gt; documentation [H:\Documents\Visual Studio 2017\Projects\WebBrowser\Web-Broswer-in-C-\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:WebBrowser.Controllers.HomePageController.GetHomePage] Missing &lt;summary&gt; documentation [H:\Documents\Visual Studio 2017\Projects\WebBrowser\Web-Broswer-in-C-\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:WebBrowser.Controllers.HomePageController.GetHomePage] Missing &lt;returns&gt; documentation [H:\Documents\Visual Studio 2017\Projects\WebBrowser\Web-Broswer-in-C-\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:WebBrowser.Controllers.HomePageController.LoadHomePage] Missing &lt;summary&gt; documentation [H:\Documents\Visual Studio 2017\Projects\WebBrowser\Web-Broswer-in-C-\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:WebBrowser.Controllers.HomePageController.SaveHomePage] Missing &lt;summary&gt; documentation [H:\Documents\Visual Studio 2017\Projects\WebBrowser\Web-Broswer-in-C-\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [T:WebBrowser.Controllers.NavigationController] Missing &lt;summary&gt; documentation [H:\Documents\Visual Studio 2017\Projects\WebBrowser\Web-Broswer-in-C-\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:WebBrowser.Controllers.NavigationController.BackwardPage(WebBrowser.Models.Page)] Missing &lt;summary&gt; documentation [H:\Documents\Visual Studio 2017\Projects\WebBrowser\Web-Broswer-in-C-\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:WebBrowser.Controllers.NavigationController.BackwardPage(WebBrowser.Models.Page)] Missing &lt;returns&gt; documentation [H:\Documents\Visual Studio 2017\Projects\WebBrowser\Web-Broswer-in-C-\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:WebBrowser.Controllers.NavigationController.BackwardPage(WebBrowser.Models.Page)] Missing &lt;param name=&quot;currentPage&quot;/&gt; documentation [H:\Documents\Visual Studio 2017\Projects\WebBrowser\Web-Broswer-in-C-\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:WebBrowser.Controllers.NavigationController.ForwardPage(WebBrowser.Models.Page)] Missing &lt;summary&gt; documentation [H:\Documents\Visual Studio 2017\Projects\WebBrowser\Web-Broswer-in-C-\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:WebBrowser.Controllers.NavigationController.ForwardPage(WebBrowser.Models.Page)] Missing &lt;returns&gt; documentation [H:\Documents\Visual Studio 2017\Projects\WebBrowser\Web-Broswer-in-C-\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:WebBrowser.Controllers.NavigationController.ForwardPage(WebBrowser.Models.Page)] Missing &lt;param name=&quot;currentPage&quot;/&gt; documentation [H:\Documents\Visual Studio 2017\Projects\WebBrowser\Web-Broswer-in-C-\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:WebBrowser.Controllers.NavigationController.GetPageTitle(WebBrowser.Models.Page)] Missing &lt;summary&gt; documentation [H:\Documents\Visual Studio 2017\Projects\WebBrowser\Web-Broswer-in-C-\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:WebBrowser.Controllers.NavigationController.GetPageTitle(WebBrowser.Models.Page)] Missing &lt;returns&gt; documentation [H:\Documents\Visual Studio 2017\Projects\WebBrowser\Web-Broswer-in-C-\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:WebBrowser.Controllers.NavigationController.GetPageTitle(WebBrowser.Models.Page)] Missing &lt;param name=&quot;currentPage&quot;/&gt; documentation [H:\Documents\Visual Studio 2017\Projects\WebBrowser\Web-Broswer-in-C-\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:WebBrowser.Controllers.NavigationController.LoadPage(System.String,WebBrowser.Models.Page)] Missing &lt;summary&gt; documentation [H:\Documents\Visual Studio 2017\Projects\WebBrowser\Web-Broswer-in-C-\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:WebBrowser.Controllers.NavigationController.LoadPage(System.String,WebBrowser.Models.Page)] Missing &lt;returns&gt; documentation [H:\Documents\Visual Studio 2017\Projects\WebBrowser\Web-Broswer-in-C-\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:WebBrowser.Controllers.NavigationController.LoadPage(System.String,WebBrowser.Models.Page)] Missing &lt;param name=&quot;address&quot;/&gt; documentation [H:\Documents\Visual Studio 2017\Projects\WebBrowser\Web-Broswer-in-C-\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:WebBrowser.Controllers.NavigationController.LoadPage(System.String,WebBrowser.Models.Page)] Missing &lt;param name=&quot;formerPage&quot;/&gt; documentation [H:\Documents\Visual Studio 2017\Projects\WebBrowser\Web-Broswer-in-C-\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [N:WebBrowser.Exceptions] Missing &lt;summary&gt; documentation [H:\Documents\Visual Studio 2017\Projects\WebBrowser\Web-Broswer-in-C-\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [T:WebBrowser.Exceptions.BadRequestException] Missing &lt;summary&gt; documentation [H:\Documents\Visual Studio 2017\Projects\WebBrowser\Web-Broswer-in-C-\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:WebBrowser.Exceptions.BadRequestException.#ctor(System.String)] Missing &lt;param name=&quot;message&quot;/&gt; documentation [H:\Documents\Visual Studio 2017\Projects\WebBrowser\Web-Broswer-in-C-\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [T:WebBrowser.Exceptions.ForbiddenPageException] Missing &lt;summary&gt; documentation [H:\Documents\Visual Studio 2017\Projects\WebBrowser\Web-Broswer-in-C-\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:WebBrowser.Exceptions.ForbiddenPageException.#ctor(System.String)] Missing &lt;param name=&quot;message&quot;/&gt; documentation [H:\Documents\Visual Studio 2017\Projects\WebBrowser\Web-Broswer-in-C-\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [N:WebBrowser.Models] Missing &lt;summary&gt; documentation [H:\Documents\Visual Studio 2017\Projects\WebBrowser\Web-Broswer-in-C-\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [T:WebBrowser.Models.FavoriteItem] Missing &lt;summary&gt; documentation [H:\Documents\Visual Studio 2017\Projects\WebBrowser\Web-Broswer-in-C-\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:WebBrowser.Models.FavoriteItem.#ctor(System.String,System.String)] Missing &lt;param name=&quot;address&quot;/&gt; documentation [H:\Documents\Visual Studio 2017\Projects\WebBrowser\Web-Broswer-in-C-\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:WebBrowser.Models.FavoriteItem.#ctor(System.String,System.String)] Missing &lt;param name=&quot;name&quot;/&gt; documentation [H:\Documents\Visual Studio 2017\Projects\WebBrowser\Web-Broswer-in-C-\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [P:WebBrowser.Models.FavoriteItem.Address] Missing &lt;summary&gt; documentation [H:\Documents\Visual Studio 2017\Projects\WebBrowser\Web-Broswer-in-C-\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:WebBrowser.Models.FavoriteItem.Equals(System.Object)] Missing &lt;summary&gt; documentation [H:\Documents\Visual Studio 2017\Projects\WebBrowser\Web-Broswer-in-C-\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:WebBrowser.Models.FavoriteItem.Equals(System.Object)] Missing &lt;returns&gt; documentation [H:\Documents\Visual Studio 2017\Projects\WebBrowser\Web-Broswer-in-C-\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:WebBrowser.Models.FavoriteItem.Equals(System.Object)] Missing &lt;param name=&quot;obj&quot;/&gt; documentation [H:\Documents\Visual Studio 2017\Projects\WebBrowser\Web-Broswer-in-C-\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [P:WebBrowser.Models.FavoriteItem.Name] Missing &lt;summary&gt; documentation [H:\Documents\Visual Studio 2017\Projects\WebBrowser\Web-Broswer-in-C-\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:WebBrowser.Models.FavoriteItem.ToString] Missing &lt;summary&gt; documentation [H:\Documents\Visual Studio 2017\Projects\WebBrowser\Web-Broswer-in-C-\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:WebBrowser.Models.FavoriteItem.ToString] Missing &lt;returns&gt; documentation [H:\Documents\Visual Studio 2017\Projects\WebBrowser\Web-Broswer-in-C-\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [T:WebBrowser.Models.Favorites] Missing &lt;summary&gt; documentation [H:\Documents\Visual Studio 2017\Projects\WebBrowser\Web-Broswer-in-C-\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:WebBrowser.Models.Favorites.#ctor(System.Collections.ArrayList)] Missing &lt;param name=&quot;favoritesList&quot;/&gt; documentation [H:\Documents\Visual Studio 2017\Projects\WebBrowser\Web-Broswer-in-C-\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [P:WebBrowser.Models.Favorites.FavoritesList] Missing &lt;summary&gt; documentation [H:\Documents\Visual Studio 2017\Projects\WebBrowser\Web-Broswer-in-C-\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [P:WebBrowser.Models.Favorites.Item(System.Int32)] Missing &lt;summary&gt; documentation [H:\Documents\Visual Studio 2017\Projects\WebBrowser\Web-Broswer-in-C-\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [T:WebBrowser.Models.History] Missing &lt;summary&gt; documentation [H:\Documents\Visual Studio 2017\Projects\WebBrowser\Web-Broswer-in-C-\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:WebBrowser.Models.History.#ctor(System.Collections.ArrayList)] Missing &lt;param name=&quot;historyOfAddresses&quot;/&gt; documentation [H:\Documents\Visual Studio 2017\Projects\WebBrowser\Web-Broswer-in-C-\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:WebBrowser.Models.History.Count] Missing &lt;summary&gt; documentation [H:\Documents\Visual Studio 2017\Projects\WebBrowser\Web-Broswer-in-C-\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:WebBrowser.Models.History.Count] Missing &lt;returns&gt; documentation [H:\Documents\Visual Studio 2017\Projects\WebBrowser\Web-Broswer-in-C-\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [P:WebBrowser.Models.History.HistoryOfAddresses] Missing &lt;summary&gt; documentation [H:\Documents\Visual Studio 2017\Projects\WebBrowser\Web-Broswer-in-C-\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [P:WebBrowser.Models.History.Item(System.Int32)] Missing &lt;summary&gt; documentation [H:\Documents\Visual Studio 2017\Projects\WebBrowser\Web-Broswer-in-C-\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [T:WebBrowser.Models.HistoryItem] Missing &lt;summary&gt; documentation [H:\Documents\Visual Studio 2017\Projects\WebBrowser\Web-Broswer-in-C-\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:WebBrowser.Models.HistoryItem.#ctor(System.String,System.DateTime)] Missing &lt;param name=&quot;address&quot;/&gt; documentation [H:\Documents\Visual Studio 2017\Projects\WebBrowser\Web-Broswer-in-C-\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:WebBrowser.Models.HistoryItem.#ctor(System.String,System.DateTime)] Missing &lt;param name=&quot;accessDate&quot;/&gt; documentation [H:\Documents\Visual Studio 2017\Projects\WebBrowser\Web-Broswer-in-C-\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [P:WebBrowser.Models.HistoryItem.AccessDate] Missing &lt;summary&gt; documentation [H:\Documents\Visual Studio 2017\Projects\WebBrowser\Web-Broswer-in-C-\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [P:WebBrowser.Models.HistoryItem.Address] Missing &lt;summary&gt; documentation [H:\Documents\Visual Studio 2017\Projects\WebBrowser\Web-Broswer-in-C-\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [T:WebBrowser.Models.HomeItem] Missing &lt;summary&gt; documentation [H:\Documents\Visual Studio 2017\Projects\WebBrowser\Web-Broswer-in-C-\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:WebBrowser.Models.HomeItem.#ctor(System.String)] Missing &lt;param name=&quot;address&quot;/&gt; documentation [H:\Documents\Visual Studio 2017\Projects\WebBrowser\Web-Broswer-in-C-\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [P:WebBrowser.Models.HomeItem.Address] Missing &lt;summary&gt; documentation [H:\Documents\Visual Studio 2017\Projects\WebBrowser\Web-Broswer-in-C-\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [T:WebBrowser.Models.NotFoundPage] Missing &lt;summary&gt; documentation [H:\Documents\Visual Studio 2017\Projects\WebBrowser\Web-Broswer-in-C-\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:WebBrowser.Models.NotFoundPage.#ctor(System.String)] Missing &lt;param name=&quot;address&quot;/&gt; documentation [H:\Documents\Visual Studio 2017\Projects\WebBrowser\Web-Broswer-in-C-\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [T:WebBrowser.Models.Page] Missing &lt;summary&gt; documentation [H:\Documents\Visual Studio 2017\Projects\WebBrowser\Web-Broswer-in-C-\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:WebBrowser.Models.Page.#ctor(System.String,System.String)] Missing &lt;param name=&quot;address&quot;/&gt; documentation [H:\Documents\Visual Studio 2017\Projects\WebBrowser\Web-Broswer-in-C-\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:WebBrowser.Models.Page.#ctor(System.String,System.String)] Missing &lt;param name=&quot;content&quot;/&gt; documentation [H:\Documents\Visual Studio 2017\Projects\WebBrowser\Web-Broswer-in-C-\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [P:WebBrowser.Models.Page.Address] Missing &lt;summary&gt; documentation [H:\Documents\Visual Studio 2017\Projects\WebBrowser\Web-Broswer-in-C-\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [P:WebBrowser.Models.Page.Content] Missing &lt;summary&gt; documentation [H:\Documents\Visual Studio 2017\Projects\WebBrowser\Web-Broswer-in-C-\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [T:WebBrowser.Models.ServerErrorPage] Missing &lt;summary&gt; documentation [H:\Documents\Visual Studio 2017\Projects\WebBrowser\Web-Broswer-in-C-\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:WebBrowser.Models.ServerErrorPage.#ctor(System.String)] Missing &lt;param name=&quot;address&quot;/&gt; documentation [H:\Documents\Visual Studio 2017\Projects\WebBrowser\Web-Broswer-in-C-\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [T:WebBrowser.Models.UnsupportedErrorPage] Missing &lt;summary&gt; documentation [H:\Documents\Visual Studio 2017\Projects\WebBrowser\Web-Broswer-in-C-\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:WebBrowser.Models.UnsupportedErrorPage.#ctor(System.String)] Missing &lt;param name=&quot;address&quot;/&gt; documentation [H:\Documents\Visual Studio 2017\Projects\WebBrowser\Web-Broswer-in-C-\Help\Working\BuildTopics.proj]
+  Processed 118 topic(s)
+  102 warning(s)
+  CopyFromIndexComponent: &quot;reflection&quot; in-memory cache entries used: 4 of 15.
+  CopyFromIndexComponent: &quot;comments&quot; in-memory cache entries used: 4 of 30.
+Done Building Project &quot;H:\Documents\Visual Studio 2017\Projects\WebBrowser\Web-Broswer-in-C-\Help\Working\BuildTopics.proj&quot; (default targets).
+
+Build succeeded.
+
+Time Elapsed 00:00:13.70
+    Last step completed in 00:00:14.2000
+</buildStep>
+<buildStep step="CombiningIntermediateTocFiles">
+Combining conceptual and API intermediate TOC files...
+    Last step completed in 00:00:00.0020
+</buildStep>
+<buildStep step="ExtractingHtmlInfo">
+Extracting HTML info for HTML Help 1 and/or website...
+[C:\Program Files (x86)\MSBuild\14.0\bin\amd64\MSBuild.exe - ExtractHtmlInfo.proj]
+Sandcastle Help File Builder and Tools, version 2019.9.15.0
+Copyright &#184; 2006-2019, Eric Woodruff, All Rights Reserved
+E-Mail: Eric@EWoodruff.us
+
+Using LCID &#39;1033&#39;, code page &#39;65001&#39;, encoding charset &#39;UTF-8&#39;.
+
+Processing website files in H:\Documents\Visual Studio 2017\Projects\WebBrowser\Web-Broswer-in-C-\Help\Working\Output\Website
+Processed 118 HTML files
+Sorting keywords and generating See Also indices
+Saving website keyword index to H:\Documents\Visual Studio 2017\Projects\WebBrowser\Web-Broswer-in-C-\Help\Working\WebKI.xml
+Saving website table of contents to H:\Documents\Visual Studio 2017\Projects\WebBrowser\Web-Broswer-in-C-\Help\Working\WebTOC.xml
+    Last step completed in 00:00:01.9335
+</buildStep>
+<buildStep step="CopyStandardHelpContent">
+Copying standard help content...
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\AlertCaution.png -&gt; H:\Documents\Visual Studio 2017\Projects\WebBrowser\Web-Broswer-in-C-\Help\Working\Output\Website\icons\AlertCaution.png
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\AlertNote.png -&gt; H:\Documents\Visual Studio 2017\Projects\WebBrowser\Web-Broswer-in-C-\Help\Working\Output\Website\icons\AlertNote.png
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\AlertSecurity.png -&gt; H:\Documents\Visual Studio 2017\Projects\WebBrowser\Web-Broswer-in-C-\Help\Working\Output\Website\icons\AlertSecurity.png
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\CFW.gif -&gt; H:\Documents\Visual Studio 2017\Projects\WebBrowser\Web-Broswer-in-C-\Help\Working\Output\Website\icons\CFW.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\CodeExample.png -&gt; H:\Documents\Visual Studio 2017\Projects\WebBrowser\Web-Broswer-in-C-\Help\Working\Output\Website\icons\CodeExample.png
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\favicon.ico -&gt; H:\Documents\Visual Studio 2017\Projects\WebBrowser\Web-Broswer-in-C-\Help\Working\Output\Website\icons\favicon.ico
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\privclass.gif -&gt; H:\Documents\Visual Studio 2017\Projects\WebBrowser\Web-Broswer-in-C-\Help\Working\Output\Website\icons\privclass.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\privdelegate.gif -&gt; H:\Documents\Visual Studio 2017\Projects\WebBrowser\Web-Broswer-in-C-\Help\Working\Output\Website\icons\privdelegate.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\privenumeration.gif -&gt; H:\Documents\Visual Studio 2017\Projects\WebBrowser\Web-Broswer-in-C-\Help\Working\Output\Website\icons\privenumeration.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\privevent.gif -&gt; H:\Documents\Visual Studio 2017\Projects\WebBrowser\Web-Broswer-in-C-\Help\Working\Output\Website\icons\privevent.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\privextension.gif -&gt; H:\Documents\Visual Studio 2017\Projects\WebBrowser\Web-Broswer-in-C-\Help\Working\Output\Website\icons\privextension.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\privfield.gif -&gt; H:\Documents\Visual Studio 2017\Projects\WebBrowser\Web-Broswer-in-C-\Help\Working\Output\Website\icons\privfield.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\privinterface.gif -&gt; H:\Documents\Visual Studio 2017\Projects\WebBrowser\Web-Broswer-in-C-\Help\Working\Output\Website\icons\privinterface.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\privmethod.gif -&gt; H:\Documents\Visual Studio 2017\Projects\WebBrowser\Web-Broswer-in-C-\Help\Working\Output\Website\icons\privmethod.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\privproperty.gif -&gt; H:\Documents\Visual Studio 2017\Projects\WebBrowser\Web-Broswer-in-C-\Help\Working\Output\Website\icons\privproperty.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\privstructure.gif -&gt; H:\Documents\Visual Studio 2017\Projects\WebBrowser\Web-Broswer-in-C-\Help\Working\Output\Website\icons\privstructure.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\protclass.gif -&gt; H:\Documents\Visual Studio 2017\Projects\WebBrowser\Web-Broswer-in-C-\Help\Working\Output\Website\icons\protclass.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\protdelegate.gif -&gt; H:\Documents\Visual Studio 2017\Projects\WebBrowser\Web-Broswer-in-C-\Help\Working\Output\Website\icons\protdelegate.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\protenumeration.gif -&gt; H:\Documents\Visual Studio 2017\Projects\WebBrowser\Web-Broswer-in-C-\Help\Working\Output\Website\icons\protenumeration.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\protevent.gif -&gt; H:\Documents\Visual Studio 2017\Projects\WebBrowser\Web-Broswer-in-C-\Help\Working\Output\Website\icons\protevent.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\protextension.gif -&gt; H:\Documents\Visual Studio 2017\Projects\WebBrowser\Web-Broswer-in-C-\Help\Working\Output\Website\icons\protextension.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\protfield.gif -&gt; H:\Documents\Visual Studio 2017\Projects\WebBrowser\Web-Broswer-in-C-\Help\Working\Output\Website\icons\protfield.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\protinterface.gif -&gt; H:\Documents\Visual Studio 2017\Projects\WebBrowser\Web-Broswer-in-C-\Help\Working\Output\Website\icons\protinterface.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\protmethod.gif -&gt; H:\Documents\Visual Studio 2017\Projects\WebBrowser\Web-Broswer-in-C-\Help\Working\Output\Website\icons\protmethod.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\protoperator.gif -&gt; H:\Documents\Visual Studio 2017\Projects\WebBrowser\Web-Broswer-in-C-\Help\Working\Output\Website\icons\protoperator.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\protproperty.gif -&gt; H:\Documents\Visual Studio 2017\Projects\WebBrowser\Web-Broswer-in-C-\Help\Working\Output\Website\icons\protproperty.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\protstructure.gif -&gt; H:\Documents\Visual Studio 2017\Projects\WebBrowser\Web-Broswer-in-C-\Help\Working\Output\Website\icons\protstructure.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\pubclass.gif -&gt; H:\Documents\Visual Studio 2017\Projects\WebBrowser\Web-Broswer-in-C-\Help\Working\Output\Website\icons\pubclass.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\pubdelegate.gif -&gt; H:\Documents\Visual Studio 2017\Projects\WebBrowser\Web-Broswer-in-C-\Help\Working\Output\Website\icons\pubdelegate.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\pubenumeration.gif -&gt; H:\Documents\Visual Studio 2017\Projects\WebBrowser\Web-Broswer-in-C-\Help\Working\Output\Website\icons\pubenumeration.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\pubevent.gif -&gt; H:\Documents\Visual Studio 2017\Projects\WebBrowser\Web-Broswer-in-C-\Help\Working\Output\Website\icons\pubevent.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\pubextension.gif -&gt; H:\Documents\Visual Studio 2017\Projects\WebBrowser\Web-Broswer-in-C-\Help\Working\Output\Website\icons\pubextension.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\pubfield.gif -&gt; H:\Documents\Visual Studio 2017\Projects\WebBrowser\Web-Broswer-in-C-\Help\Working\Output\Website\icons\pubfield.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\pubinterface.gif -&gt; H:\Documents\Visual Studio 2017\Projects\WebBrowser\Web-Broswer-in-C-\Help\Working\Output\Website\icons\pubinterface.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\pubmethod.gif -&gt; H:\Documents\Visual Studio 2017\Projects\WebBrowser\Web-Broswer-in-C-\Help\Working\Output\Website\icons\pubmethod.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\puboperator.gif -&gt; H:\Documents\Visual Studio 2017\Projects\WebBrowser\Web-Broswer-in-C-\Help\Working\Output\Website\icons\puboperator.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\pubproperty.gif -&gt; H:\Documents\Visual Studio 2017\Projects\WebBrowser\Web-Broswer-in-C-\Help\Working\Output\Website\icons\pubproperty.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\pubstructure.gif -&gt; H:\Documents\Visual Studio 2017\Projects\WebBrowser\Web-Broswer-in-C-\Help\Working\Output\Website\icons\pubstructure.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\SectionCollapsed.png -&gt; H:\Documents\Visual Studio 2017\Projects\WebBrowser\Web-Broswer-in-C-\Help\Working\Output\Website\icons\SectionCollapsed.png
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\SectionExpanded.png -&gt; H:\Documents\Visual Studio 2017\Projects\WebBrowser\Web-Broswer-in-C-\Help\Working\Output\Website\icons\SectionExpanded.png
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\slMobile.gif -&gt; H:\Documents\Visual Studio 2017\Projects\WebBrowser\Web-Broswer-in-C-\Help\Working\Output\Website\icons\slMobile.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\static.gif -&gt; H:\Documents\Visual Studio 2017\Projects\WebBrowser\Web-Broswer-in-C-\Help\Working\Output\Website\icons\static.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\xna.gif -&gt; H:\Documents\Visual Studio 2017\Projects\WebBrowser\Web-Broswer-in-C-\Help\Working\Output\Website\icons\xna.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\scripts\branding.js -&gt; H:\Documents\Visual Studio 2017\Projects\WebBrowser\Web-Broswer-in-C-\Help\Working\Output\Website\scripts\branding.js
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\styles\branding-cs-CZ.css -&gt; H:\Documents\Visual Studio 2017\Projects\WebBrowser\Web-Broswer-in-C-\Help\Working\Output\Website\styles\branding-cs-CZ.css
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\styles\branding-de-DE.css -&gt; H:\Documents\Visual Studio 2017\Projects\WebBrowser\Web-Broswer-in-C-\Help\Working\Output\Website\styles\branding-de-DE.css
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\styles\branding-en-US.css -&gt; H:\Documents\Visual Studio 2017\Projects\WebBrowser\Web-Broswer-in-C-\Help\Working\Output\Website\styles\branding-en-US.css
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\styles\branding-es-ES.css -&gt; H:\Documents\Visual Studio 2017\Projects\WebBrowser\Web-Broswer-in-C-\Help\Working\Output\Website\styles\branding-es-ES.css
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\styles\branding-fr-FR.css -&gt; H:\Documents\Visual Studio 2017\Projects\WebBrowser\Web-Broswer-in-C-\Help\Working\Output\Website\styles\branding-fr-FR.css
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\styles\branding-Help1.css -&gt; H:\Documents\Visual Studio 2017\Projects\WebBrowser\Web-Broswer-in-C-\Help\Working\Output\Website\styles\branding-Help1.css
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\styles\branding-HelpViewer.css -&gt; H:\Documents\Visual Studio 2017\Projects\WebBrowser\Web-Broswer-in-C-\Help\Working\Output\Website\styles\branding-HelpViewer.css
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\styles\branding-it-IT.css -&gt; H:\Documents\Visual Studio 2017\Projects\WebBrowser\Web-Broswer-in-C-\Help\Working\Output\Website\styles\branding-it-IT.css
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\styles\branding-ja-JP.css -&gt; H:\Documents\Visual Studio 2017\Projects\WebBrowser\Web-Broswer-in-C-\Help\Working\Output\Website\styles\branding-ja-JP.css
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\styles\branding-ko-KR.css -&gt; H:\Documents\Visual Studio 2017\Projects\WebBrowser\Web-Broswer-in-C-\Help\Working\Output\Website\styles\branding-ko-KR.css
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\styles\branding-pl-PL.css -&gt; H:\Documents\Visual Studio 2017\Projects\WebBrowser\Web-Broswer-in-C-\Help\Working\Output\Website\styles\branding-pl-PL.css
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\styles\branding-pt-BR.css -&gt; H:\Documents\Visual Studio 2017\Projects\WebBrowser\Web-Broswer-in-C-\Help\Working\Output\Website\styles\branding-pt-BR.css
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\styles\branding-ru-RU.css -&gt; H:\Documents\Visual Studio 2017\Projects\WebBrowser\Web-Broswer-in-C-\Help\Working\Output\Website\styles\branding-ru-RU.css
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\styles\branding-tr-TR.css -&gt; H:\Documents\Visual Studio 2017\Projects\WebBrowser\Web-Broswer-in-C-\Help\Working\Output\Website\styles\branding-tr-TR.css
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\styles\branding-Website.css -&gt; H:\Documents\Visual Studio 2017\Projects\WebBrowser\Web-Broswer-in-C-\Help\Working\Output\Website\styles\branding-Website.css
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\styles\branding-zh-CN.css -&gt; H:\Documents\Visual Studio 2017\Projects\WebBrowser\Web-Broswer-in-C-\Help\Working\Output\Website\styles\branding-zh-CN.css
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\styles\branding-zh-TW.css -&gt; H:\Documents\Visual Studio 2017\Projects\WebBrowser\Web-Broswer-in-C-\Help\Working\Output\Website\styles\branding-zh-TW.css
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\styles\branding.css -&gt; H:\Documents\Visual Studio 2017\Projects\WebBrowser\Web-Broswer-in-C-\Help\Working\Output\Website\styles\branding.css
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\Web\index.html -&gt; H:\Documents\Visual Studio 2017\Projects\WebBrowser\Web-Broswer-in-C-\Help\Working\Output\Website\index.html
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\Web\search.html -&gt; H:\Documents\Visual Studio 2017\Projects\WebBrowser\Web-Broswer-in-C-\Help\Working\Output\Website\search.html
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\Web\SearchHelp.aspx -&gt; H:\Documents\Visual Studio 2017\Projects\WebBrowser\Web-Broswer-in-C-\Help\Working\Output\Website\SearchHelp.aspx
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\Web\SearchHelp.inc.php -&gt; H:\Documents\Visual Studio 2017\Projects\WebBrowser\Web-Broswer-in-C-\Help\Working\Output\Website\SearchHelp.inc.php
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\Web\SearchHelp.php -&gt; H:\Documents\Visual Studio 2017\Projects\WebBrowser\Web-Broswer-in-C-\Help\Working\Output\Website\SearchHelp.php
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\Web\Web.Config -&gt; H:\Documents\Visual Studio 2017\Projects\WebBrowser\Web-Broswer-in-C-\Help\Working\Output\Website\Web.Config
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\Web\html\GeneralError.htm -&gt; H:\Documents\Visual Studio 2017\Projects\WebBrowser\Web-Broswer-in-C-\Help\Working\Output\Website\html\GeneralError.htm
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\Web\html\PageNotFound.htm -&gt; H:\Documents\Visual Studio 2017\Projects\WebBrowser\Web-Broswer-in-C-\Help\Working\Output\Website\html\PageNotFound.htm
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\Web\icons\Search.png -&gt; H:\Documents\Visual Studio 2017\Projects\WebBrowser\Web-Broswer-in-C-\Help\Working\Output\Website\icons\Search.png
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\Web\icons\TocClose.gif -&gt; H:\Documents\Visual Studio 2017\Projects\WebBrowser\Web-Broswer-in-C-\Help\Working\Output\Website\icons\TocClose.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\Web\icons\TocCollapsed.gif -&gt; H:\Documents\Visual Studio 2017\Projects\WebBrowser\Web-Broswer-in-C-\Help\Working\Output\Website\icons\TocCollapsed.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\Web\icons\TocExpanded.gif -&gt; H:\Documents\Visual Studio 2017\Projects\WebBrowser\Web-Broswer-in-C-\Help\Working\Output\Website\icons\TocExpanded.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\Web\icons\TocOpen.gif -&gt; H:\Documents\Visual Studio 2017\Projects\WebBrowser\Web-Broswer-in-C-\Help\Working\Output\Website\icons\TocOpen.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\Web\scripts\branding-Website.js -&gt; H:\Documents\Visual Studio 2017\Projects\WebBrowser\Web-Broswer-in-C-\Help\Working\Output\Website\scripts\branding-Website.js
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\Web\scripts\clipboard.min.js -&gt; H:\Documents\Visual Studio 2017\Projects\WebBrowser\Web-Broswer-in-C-\Help\Working\Output\Website\scripts\clipboard.min.js
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\Web\scripts\jquery-3.3.1.min.js -&gt; H:\Documents\Visual Studio 2017\Projects\WebBrowser\Web-Broswer-in-C-\Help\Working\Output\Website\scripts\jquery-3.3.1.min.js
+    Last step completed in 00:00:00.4784
+</buildStep>
+<buildStep step="GenerateHelpFormatTableOfContents">
+Generating website table of contents file...
+    Last step completed in 00:00:00.0000
+</buildStep>
+<buildStep step="GenerateFullTextIndex">
+Generating full-text index for the website...
+
+<plugIn name="Lightweight Website Style" behavior="After" priority="1000">
+Adding lightweight search and TOC elements to each topic...
+</plugIn>    Last step completed in 00:00:01.7940
+</buildStep>
+<buildStep step="CopyingWebsiteFiles">
+Copying website files to output folder...
+
+Copied 260 files for the website content
+    Last step completed in 00:00:00.8092
+</buildStep>
+<buildStep step="CleanIntermediates">
+Removing intermediate files...
+    Last step completed in 00:00:00.1759
+</buildStep>
+<buildStep step="Completed">
+
+Build completed successfully at 19/10/2019 16:57:28.  Total time: 00:00:32.5463
+
+</buildStep>
+</shfbBuild>

@@ -1,0 +1,216 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="WebBrowser.Controllers.FavoritesController" Collapsed="true">
+    <Position X="16.5" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AABAAAIAAQAAAAAAAAAQEAACAAAAAAAAAACgIAAAAAA=</HashCode>
+      <FileName>Controllers\FavoritesController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WebBrowser.Controllers.HistoryController" Collapsed="true">
+    <Position X="14.5" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAIAABAAAAAEACAAAIAEAAAAAAAAAAAAAAACAAACAgA=</HashCode>
+      <FileName>Controllers\HistoryController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WebBrowser.Controllers.HomePageController" Collapsed="true">
+    <Position X="20.5" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAgAAAAAAAAAAAAAEAAAAAAAAAAAAAAQEgCAAAAA=</HashCode>
+      <FileName>Controllers\HomePageController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WebBrowser.Controllers.HttpRequestController" Collapsed="true">
+    <Position X="18.5" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAI=</HashCode>
+      <FileName>Controllers\HttpRequestController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WebBrowser.Controllers.NavigationController" Collapsed="true">
+    <Position X="22.5" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAACAAAAAAAAAAAAAAAAEAAQAAAAAAAAAAAIAAEACAA=</HashCode>
+      <FileName>Controllers\NavigationController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WebBrowser.Exceptions.BadRequestException" Collapsed="true">
+    <Position X="5.25" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Exceptions\BadRequestException.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WebBrowser.Exceptions.ForbiddenPageException" Collapsed="true">
+    <Position X="7.5" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Exceptions\ForbiddenPageException.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WebBrowser.Exceptions.PageNotFoundException" Collapsed="true">
+    <Position X="7.5" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Exceptions\PageNotFoundException.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WebBrowser.Exceptions.ServerErrorException" Collapsed="true">
+    <Position X="3" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Exceptions\ServerErrorException.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WebBrowser.Exceptions.UnsupportedErrorException" Collapsed="true">
+    <Position X="5.25" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Exceptions\UnsupportedErrorException.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WebBrowser.FavoriteListForm" Collapsed="true">
+    <Position X="16.75" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAACAIQoAAAAEAQCAAMBAQiEAAAgAAAgQAAAAAQACE=</HashCode>
+      <FileName>FavoriteListForm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WebBrowser.FavoritesForm" Collapsed="true">
+    <Position X="16.75" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQBCAAAAAAAAAABAAAAAAACABAAgAACAAAAAAAAACQ=</HashCode>
+      <FileName>FavoritesForm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WebBrowser.HistoryForm" Collapsed="true">
+    <Position X="14.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAABAAQABAABAAAAAAAABCAAAAgAAAAAgAAAAAAAI=</HashCode>
+      <FileName>HistoryForm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WebBrowser.HomePageForm" Collapsed="true">
+    <Position X="20.75" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgCAAAAQACAAAIAAAACAoCACAAAAAAAAgEAAhAAAACA=</HashCode>
+      <FileName>HomePageForm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WebBrowser.MainWindow" Collapsed="true">
+    <Position X="18.75" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAACAIwQCAAAAAQAASkAKAihAEGAAAAhOAHAAAAAGQ=</HashCode>
+      <FileName>MainWindowForm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WebBrowser.Program" Collapsed="true">
+    <Position X="9.75" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>Program.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WebBrowser.Models.BadRequestPage" Collapsed="true">
+    <Position X="31.75" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\BadRequestPage.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WebBrowser.Models.FavouriteItem" Collapsed="true">
+    <Position X="25.5" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAEgAAAAAQAAAAAAAACAAAAAAAAAAA=</HashCode>
+      <FileName>Models\FavouriteItem.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WebBrowser.Models.Favourites" Collapsed="true">
+    <Position X="25.5" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAEAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\Favourites.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WebBrowser.Models.ForbiddenPage" Collapsed="true">
+    <Position X="25" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\ForbiddenPage.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WebBrowser.Models.History" Collapsed="true">
+    <Position X="27.5" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAACAAAAAQBAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\History.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WebBrowser.Models.HistoryItem" Collapsed="true">
+    <Position X="27.5" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAQAAAAAAAAAAAAAAACAAAAAAAAAAA=</HashCode>
+      <FileName>Models\HistoryItem.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WebBrowser.Models.HomeItem" Collapsed="true">
+    <Position X="31.25" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAA=</HashCode>
+      <FileName>Models\HomeItem.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WebBrowser.Models.NotFoundPage" Collapsed="true">
+    <Position X="34" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\NotFoundPage.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WebBrowser.Models.Page" Collapsed="true">
+    <Position X="29.5" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAgAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAA=</HashCode>
+      <FileName>Models\Page.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WebBrowser.Models.ServerErrorPage" Collapsed="true">
+    <Position X="27.25" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\ServerErrorPage.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WebBrowser.Models.UnsupportedErrorPage" Collapsed="true">
+    <Position X="29.5" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\UnsupportedErrorPage.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WebBrowser.Properties.Resources" Collapsed="true">
+    <Position X="10" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAEAAAAAAAAAAAAABEgQAAQCAAAAAAAAAAAIAAIE=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WebBrowser.Properties.Settings" Collapsed="true">
+    <Position X="9.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAIAAAAAABAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WebBrowser.Exceptions.InvalidValuedVariableException" Collapsed="true">
+    <Position X="3" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Exceptions\InvalidValuedVariableException.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="System.Windows.Forms.Form" Collapsed="true">
+    <Position X="14.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

@@ -92,7 +92,7 @@ namespace WebBrowser
             this.labelAddingFavoriteName.Size = new System.Drawing.Size(255, 51);
             this.labelAddingFavoriteName.TabIndex = 3;
             this.labelAddingFavoriteName.TabStop = false;
-            this.labelAddingFavoriteName.Text = "Please enter the URL of the favorite to add:";
+            this.labelAddingFavoriteName.Text = "Please enter the URL of the favourite to add:";
             // 
             // favoriteAddingAddress
             // 
@@ -120,7 +120,7 @@ namespace WebBrowser
             this.labelFavoriteAddingURL.Size = new System.Drawing.Size(255, 46);
             this.labelFavoriteAddingURL.TabIndex = 4;
             this.labelFavoriteAddingURL.TabStop = false;
-            this.labelFavoriteAddingURL.Text = "Please enter a name for the favorite:";
+            this.labelFavoriteAddingURL.Text = "Please enter a name for the favourite:";
             // 
             // addFavoritesButton
             // 

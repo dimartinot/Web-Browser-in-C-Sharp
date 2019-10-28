@@ -16,9 +16,9 @@ namespace WebBrowser.Controllers
     class FavoritesController
     {
         /// <summary>
-        /// Holds the instance of <seealso cref="Models.Favorites"/>  which acts as a list of FavoriteItems
+        /// Holds the instance of <seealso cref="Models.Favourites"/>  which acts as a list of FavoriteItems
         /// </summary>
-        private Models.Favorites Favorites { get; set; }
+        private Models.Favourites Favorites { get; set; }
         /// <summary>
         /// Path to the .xml serialization of the "Favorites" instance
         /// </summary>
@@ -33,8 +33,8 @@ namespace WebBrowser.Controllers
         }
 
         /// <summary>
-        /// Method that opens the .xml file and loads its content into the <seealso cref="Models.Favorites"/> class attribute.
-        /// If the file does not exist, create it and initialize the <seealso cref="Models.Favorites"/> class attribute as an empty list of <seealso cref="Models.FavoriteItem"/>.
+        /// Method that opens the .xml file and loads its content into the <seealso cref="Models.Favourites"/> class attribute.
+        /// If the file does not exist, create it and initialize the <seealso cref="Models.Favourites"/> class attribute as an empty list of <seealso cref="Models.FavouriteItem"/>.
         /// </summary>
         public void LoadFavorites()
         {
@@ -44,11 +44,11 @@ namespace WebBrowser.Controllers
                 SoapFormatter formatter = new SoapFormatter();
                 try
                 {
-                    Favorites = (Models.Favorites)formatter.Deserialize(stream);
+                    Favorites = (Models.Favourites)formatter.Deserialize(stream);
                 }
                 catch (Exception e)
                 {
-                    Favorites = new Models.Favorites();
+                    Favorites = new Models.Favourites();
                 }
                 stream.Close();
             }
@@ -57,12 +57,18 @@ namespace WebBrowser.Controllers
                 Stream stream = File.Open(FAVORITES_PATH, FileMode.Create);
                 stream.Close();
 
-                this.Favorites = new Models.Favorites();
+                this.Favorites = new Models.Favourites();
+            }
+
+            //Postcondition
+            if (this.Favorites == null)
+            {
+                throw new Exceptions.InvalidValuedVariableException("LoadFavorites() PostCondition failed. Favorites variable is not initialized");
             }
         }
 
         /// <summary>
-        /// Method that saves into the .xml file the <seealso cref="Models.Favorites"/> attribute
+        /// Method that saves into the .xml file the <seealso cref="Models.Favourites"/> attribute
         /// </summary>
         public void SaveFavorites()
         {
@@ -75,58 +81,66 @@ namespace WebBrowser.Controllers
         }
 
         /// <summary>
-        /// Methods that adds a given url and a given name as a <seealso cref="Models.FavoriteItem"/> in the <seealso cref="Models.Favorites"/> attribute of this class
+        /// Methods that adds a given url and a given name as a <seealso cref="Models.FavouriteItem"/> in the <seealso cref="Models.Favourites"/> attribute of this class
         /// </summary>
         /// <param name="address">String acting as a webpage url</param>
         /// <param name="name">Name of this webpage</param>
         public void AddToFavorites(string address, string name)
         {
-            this.Favorites.FavoritesList.Add(new Models.FavoriteItem(address, name));
+            this.Favorites.FavouritesList.Add(new Models.FavouriteItem(address, name));
             this.SaveFavorites();
         }
 
         /// <summary>
-        /// Methods that returns the number of favorites by accessing the count attribute of the list of <seealso cref="Models.FavoriteItem"/> stored in the <seealso cref="Models.Favorites"/> class attribute.
+        /// Methods that returns the number of favorites by accessing the count attribute of the list of <seealso cref="Models.FavouriteItem"/> stored in the <seealso cref="Models.Favourites"/> class attribute.
         /// </summary>
         /// <returns><seealso cref="int"/>: Number of favorites</returns>
         public int NumberOfFavorites()
         {
-            return this.Favorites.FavoritesList.Count;
+            return this.Favorites.FavouritesList.Count;
         }
 
         /// <summary>
         /// Returns the list of favorites
         /// </summary>
-        /// <returns><seealso cref="ArrayList"/>: List of <seealso cref="FavoriteItem"/></returns>
+        /// <returns><seealso cref="ArrayList"/>: List of <seealso cref="FavouriteItem"/></returns>
         public ArrayList ListOfFavoriteItems()
         {
-            return this.Favorites.FavoritesList;
+            return this.Favorites.FavouritesList;
         }
 
         /// <summary>
-        /// Change a favorite data of a given index with a given <seealso cref="Models.FavoriteItem"/> instance and save the new list to disk.
+        /// Change a favorite data of a given index with a given <seealso cref="Models.FavouriteItem"/> instance and save the new list to disk.
         /// </summary>
-        /// <param name="favoriteItem">Instance of a <seealso cref="Models.FavoriteItem"/></param>
+        /// <param name="favoriteItem">Instance of a <seealso cref="Models.FavouriteItem"/></param>
         /// <param name="index">Index to which the change should be applied</param>
-        public void UpdateFavorite(FavoriteItem favoriteItem, int index)
+        public void UpdateFavorite(FavouriteItem favoriteItem, int index)
         {
-            if (index >= 0 && index < this.Favorites.FavoritesList.Count)
+            if (index >= 0 && index < this.Favorites.FavouritesList.Count)
             {
                 this.Favorites[index] = favoriteItem;
                 this.SaveFavorites();
+            } else
+            {
+                throw new Exceptions.InvalidValuedVariableException("Index out of bounds");
             }
         }
 
         /// <summary>
         /// Delete a given favorite at a given index.
         /// </summary>
-        /// <param name="objIndex">Index of the <seealso cref="Models.FavoriteItem"/> to delete</param>
-        internal void DeleteFavorite(int objIndex)
+        /// <param name="objIndex">Index of the <seealso cref="Models.FavouriteItem"/> to delete</param>
+        public void DeleteFavorite(int objIndex)
         {
-            if (objIndex >= 0 && objIndex < this.Favorites.FavoritesList.Count)
+            if (objIndex >= 0 && objIndex < this.Favorites.FavouritesList.Count)
             {
-                this.Favorites.FavoritesList.RemoveAt(objIndex);
+                this.Favorites.FavouritesList.RemoveAt(objIndex);
                 this.SaveFavorites();
+            }
+
+            else
+            {
+                throw new Exceptions.InvalidValuedVariableException("Index out of bounds");
             }
         }
     }

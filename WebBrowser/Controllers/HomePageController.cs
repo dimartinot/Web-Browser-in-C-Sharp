@@ -56,6 +56,10 @@ namespace WebBrowser.Controllers
 
                 CurrentHomePage = new Models.HomeItem("");
             }
+            if (this.CurrentHomePage == null)
+            {
+                throw new Exceptions.InvalidValuedVariableException("CurrentHomePage has not been correctly loaded.");
+            }
         }
 
         /// <summary>
@@ -86,6 +90,11 @@ namespace WebBrowser.Controllers
         /// <param name="address"></param>
         public void ChangeHomePage(string address)
         {
+            if (address == null)
+            {
+                throw new Exceptions.InvalidValuedVariableException("Address to add cannot be null.");
+            }
+
             Models.HomeItem NewHomePage = new Models.HomeItem(address);
 
             this.CurrentHomePage = NewHomePage;

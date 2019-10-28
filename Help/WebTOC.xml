@@ -1,0 +1,162 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<HelpTOC>
+
+  <HelpTOCNode Id="376d0be9-502a-45f9-b4ed-fdc9a6f28df9" Title="WebBrowser" Url="html/07aafa36-610e-4ae8-05cf-6865c02b8a4c.htm">
+    <HelpTOCNode Id="323df716-53eb-4d3b-bb0f-4152c8baf4cd" Title="HistoryForm Class" Url="html/bb1f868e-9898-f625-3972-e5d464bd634f.htm">
+      <HelpTOCNode Title="HistoryForm Constructor " Url="html/f1a78f16-f2f8-ea9f-c77d-fde37f4c4672.htm" />
+      <HelpTOCNode Title="HistoryForm Properties" Url="html/4c6316ba-ba12-b44b-f68d-565574970941.htm" />
+      <HelpTOCNode Id="fbbcb124-a01e-4b2a-82d6-b2733fc91714" Title="HistoryForm Methods" Url="html/7317e7ea-2536-9383-cfe8-71a060715b72.htm">
+        <HelpTOCNode Title="PopulateListBox Method " Url="html/7c20a3bb-a03a-7b7e-b80a-921bdf8a89c5.htm" />
+        <HelpTOCNode Title="ShowForm Method " Url="html/808259ba-0cb0-c565-d47e-6cd092b99d54.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Title="HistoryForm Events" Url="html/e7ff8886-eb59-9b96-8500-0066cab8e968.htm" />
+    </HelpTOCNode>
+    <HelpTOCNode Id="c11d0118-ab6d-4733-ab2e-997418cf7239" Title="HomePageForm Class" Url="html/f24c4da8-9680-dbdc-ab21-8c6009195f25.htm">
+      <HelpTOCNode Title="HomePageForm Constructor " Url="html/cd8c680c-e325-bc8c-2cab-fa35f988093b.htm" />
+      <HelpTOCNode Title="HomePageForm Properties" Url="html/3f027b09-77b6-ab69-4882-6c02221e085a.htm" />
+      <HelpTOCNode Id="d9a59f9b-6c4d-4709-848a-3478d4a012f8" Title="HomePageForm Methods" Url="html/52f64659-dad4-8f4b-a46d-5fd808067549.htm">
+        <HelpTOCNode Id="09158eb8-16cc-4ae0-90b0-f26e28c8b8f3" Title="Dispose Method " Url="html/194b6279-a517-1648-4841-e0bcecbb81de.htm">
+          <HelpTOCNode Title="Dispose Method (Boolean)" Url="html/98cd4fcc-73c0-1be6-8de0-e9765c636173.htm" />
+        </HelpTOCNode>
+      </HelpTOCNode>
+      <HelpTOCNode Title="HomePageForm Events" Url="html/ba8d97ae-9d74-e619-7fc3-c2cdc4a09918.htm" />
+    </HelpTOCNode>
+    <HelpTOCNode Id="1b6228b1-1dcb-4dec-b2c2-bfbc174cefab" Title="MainWindow Class" Url="html/4783fbf2-dfce-1a5d-d543-1d10271c2504.htm">
+      <HelpTOCNode Title="MainWindow Constructor " Url="html/c80a42b3-70d8-14bb-39a3-aeda29ee67af.htm" />
+      <HelpTOCNode Id="3298b396-fcba-4d03-a309-5b3a4e106875" Title="MainWindow Properties" Url="html/b39e05d8-5a11-3797-d622-95835e72ccdf.htm">
+        <HelpTOCNode Title="ActivePage Property " Url="html/e71e1954-a64f-ba82-de1a-ee17d1f26a1d.htm" />
+        <HelpTOCNode Title="History Property " Url="html/83dd065e-ab91-d1d9-b53f-d201c6135d42.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="dfbc2be1-bdae-4b2c-bf9a-476c0e6ca6b1" Title="MainWindow Methods" Url="html/d609102e-3ac2-5758-be44-28cd61fa8080.htm">
+        <HelpTOCNode Id="19b0f9eb-8015-4613-81b1-17b2d93b8e6b" Title="Dispose Method " Url="html/9ab9f24a-f6b3-3f25-3ef8-5d4dd62aa648.htm">
+          <HelpTOCNode Title="Dispose Method (Boolean)" Url="html/32972788-6d85-8b0a-d096-4a16b3241a6d.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Title="LoadAddressFromOutside Method " Url="html/40dc15fd-4d70-cf6f-a802-e777db708ed0.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Title="MainWindow Events" Url="html/ae677347-4be8-fb08-18ec-819807225316.htm" />
+    </HelpTOCNode>
+  </HelpTOCNode>
+  <HelpTOCNode Id="0d0767bd-c66e-494b-a2ce-46641bbbf47b" Title="WebBrowser.Controllers" Url="html/818d97b7-8591-a907-9017-95e52d1e7ab8.htm">
+    <HelpTOCNode Id="8d1237d2-8236-4a82-8ec2-5af6226d1a86" Title="HistoryController Class" Url="html/7d6eabc3-a482-08b3-ff2c-3c80c7c0f8ce.htm">
+      <HelpTOCNode Title="HistoryController Constructor " Url="html/7e3cfff4-3b46-ac84-f3a6-cc7680a7db99.htm" />
+      <HelpTOCNode Id="daaeb442-888c-4761-a662-e7436138164e" Title="HistoryController Methods" Url="html/7b97dbdf-4d45-21c4-9ea7-54c628205ef2.htm">
+        <HelpTOCNode Title="AddAddress Method " Url="html/da842b9a-1b9b-f0f6-7f9b-494818932851.htm" />
+        <HelpTOCNode Title="GetAddressAt Method " Url="html/d0723a40-cef3-c2ba-9247-370a352b018b.htm" />
+        <HelpTOCNode Title="GetCurrentHistory Method " Url="html/b3615ea0-4018-fe9a-8ccf-a532b34483d8.htm" />
+        <HelpTOCNode Title="GetListOfItemsFromHistory Method " Url="html/e6968fe4-0a41-7709-97b3-70c04f04fe0a.htm" />
+        <HelpTOCNode Title="ListOfHistoryItems Method " Url="html/40ff5f49-1957-250d-dcb0-6a9b1149dba2.htm" />
+        <HelpTOCNode Title="LoadHistory Method " Url="html/3e89f8e0-ebb8-d121-7525-7907f112c155.htm" />
+        <HelpTOCNode Title="NumberOfAddresses Method " Url="html/55f7c527-463e-1305-4ef7-cabad1f53259.htm" />
+        <HelpTOCNode Title="SaveHistory Method " Url="html/88ec6d82-7e1c-24a8-6511-0747371528cd.htm" />
+        <HelpTOCNode Title="SortHistory Method " Url="html/94fe56d7-216b-c202-cb5b-ec4663f36c91.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="5f1f3c25-4d71-41f6-940b-836b7acab959" Title="HomePageController Class" Url="html/1f0ed9c4-7ae5-4660-4abf-1f1bea223876.htm">
+      <HelpTOCNode Title="HomePageController Constructor " Url="html/3bf255f5-df6d-7ee8-8bd5-b281ea2a192e.htm" />
+      <HelpTOCNode Id="bdbffa61-d690-4fbf-86b4-c80b2310d2d5" Title="HomePageController Methods" Url="html/f3cf36bd-076b-7674-2b8b-4b5a82415332.htm">
+        <HelpTOCNode Title="ChangeHomePage Method " Url="html/62186caa-6619-4533-0f8d-c433e3232653.htm" />
+        <HelpTOCNode Title="GetHomePage Method " Url="html/c9997b81-b15b-d127-1006-297fa176b933.htm" />
+        <HelpTOCNode Title="LoadHomePage Method " Url="html/633cc420-3cb2-2084-b8d6-3cb74e4eadfe.htm" />
+        <HelpTOCNode Title="SaveHomePage Method " Url="html/8ff31c95-7097-4841-533c-20fe58a7f605.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="6eb017f2-95b6-4bb4-b0cc-9e20681cbf70" Title="NavigationController Class" Url="html/03b4527b-6755-292b-fc6f-40d113b929cb.htm">
+      <HelpTOCNode Title="NavigationController Constructor " Url="html/0073e28d-e563-b6ed-ff4a-ca1a81982f68.htm" />
+      <HelpTOCNode Id="6a1b2137-2f1e-46af-831f-0984da08339c" Title="NavigationController Methods" Url="html/235b1d6f-e11d-01d4-86d5-8b80cab73d9c.htm">
+        <HelpTOCNode Title="BackwardPage Method " Url="html/a94da084-8b10-a6e6-a059-16c293e6196a.htm" />
+        <HelpTOCNode Title="ForwardPage Method " Url="html/37352b13-41ca-158f-d96f-a87bc5c90ec8.htm" />
+        <HelpTOCNode Title="GetPageTitle Method " Url="html/aa52522b-5a82-1480-447e-26f1a1f3f33f.htm" />
+        <HelpTOCNode Title="LoadPage Method " Url="html/5947450e-9e87-0863-3cfd-6bf590a32d6d.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+  </HelpTOCNode>
+  <HelpTOCNode Id="f6fa9241-5d8e-4e77-b6ab-551eed1c1791" Title="WebBrowser.Exceptions" Url="html/87b6a1f6-34f7-f321-18c1-3c26458d92c8.htm">
+    <HelpTOCNode Id="daecf4d2-9389-4adf-aafe-b04492e1f085" Title="BadRequestException Class" Url="html/9c0996a5-3857-a91a-fa5b-45839984dc64.htm">
+      <HelpTOCNode Title="BadRequestException Constructor " Url="html/efafb31f-b8b1-b065-5c34-c15ddb6c53c4.htm" />
+      <HelpTOCNode Title="BadRequestException Properties" Url="html/6854fd3e-334c-cd78-0375-0bae326e5a7f.htm" />
+      <HelpTOCNode Title="BadRequestException Methods" Url="html/4926eebe-bd97-ff62-4632-5f5c4d384926.htm" />
+      <HelpTOCNode Title="BadRequestException Events" Url="html/6a349cda-33c0-0b69-c866-339006e20d86.htm" />
+    </HelpTOCNode>
+    <HelpTOCNode Id="53782bfc-a2fa-4418-90a4-7bf642bd52cc" Title="ForbiddenPageException Class" Url="html/587c2688-cd27-22d5-42a3-8597d05dc180.htm">
+      <HelpTOCNode Title="ForbiddenPageException Constructor " Url="html/576a99e5-954f-6d92-b5da-6c35bb9ecd34.htm" />
+      <HelpTOCNode Title="ForbiddenPageException Properties" Url="html/0e486277-eba7-a905-0761-b5c649a5582d.htm" />
+      <HelpTOCNode Title="ForbiddenPageException Methods" Url="html/9522ec9a-e973-1ec9-eedf-ba91df846a43.htm" />
+      <HelpTOCNode Title="ForbiddenPageException Events" Url="html/36efe89d-2ca1-1caf-5a60-11f843a44000.htm" />
+    </HelpTOCNode>
+  </HelpTOCNode>
+  <HelpTOCNode Id="d9628ba3-36ac-4b54-a20a-268ed01708a7" Title="WebBrowser.Models" Url="html/70afd9ff-237e-a0dc-15fe-d11eadb30071.htm">
+    <HelpTOCNode Id="5a8be1a6-9fc5-40f2-b0d8-b3660c08dd47" Title="FavoriteItem Class" Url="html/fbc67226-9742-999b-543f-67362c14f6e0.htm">
+      <HelpTOCNode Title="FavoriteItem Constructor " Url="html/01d14c8f-3a4b-307d-24f7-6130b8337e0f.htm" />
+      <HelpTOCNode Id="975bd562-2e05-46c8-bb08-40655050318d" Title="FavoriteItem Properties" Url="html/62eb966c-9789-2f87-e4bb-267b784797cf.htm">
+        <HelpTOCNode Title="Address Property " Url="html/0a338cd4-bf08-aa51-03c3-9b4960ffefaf.htm" />
+        <HelpTOCNode Title="Name Property " Url="html/faef06e9-c9c8-972b-a7dd-c23b028b0b6b.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="5518bf40-00af-409a-9360-b55a30043aa8" Title="FavoriteItem Methods" Url="html/2a12f022-9bc7-0a47-8e54-175fa102da86.htm">
+        <HelpTOCNode Title="Equals Method " Url="html/db876c2d-c0ba-df47-cb27-8baba5838b64.htm" />
+        <HelpTOCNode Title="ToString Method " Url="html/cab0872d-408d-9043-e4a3-0d5873b0158d.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="fe87001a-9b87-4c35-a146-12549a729694" Title="Favorites Class" Url="html/14b555f1-10a8-f858-a4d9-a8c2df21b36c.htm">
+      <HelpTOCNode Id="09b7aad4-4276-4d5b-853c-5bcf15dc93b7" Title="Favorites Constructor " Url="html/532eeaff-5b8a-6b9e-150e-0716fc31c95b.htm">
+        <HelpTOCNode Title="Favorites Constructor " Url="html/3744a437-db07-aac1-00c6-a8cff2636aa8.htm" />
+        <HelpTOCNode Title="Favorites Constructor (ArrayList)" Url="html/bc313379-5993-5ebf-df77-7337cb2b601d.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="4c5b8627-ae8e-4922-97bc-1b1004b8da51" Title="Favorites Properties" Url="html/d2250a4a-a4f9-8548-8581-2aada6b8f0a0.htm">
+        <HelpTOCNode Title="FavoritesList Property " Url="html/04661794-d07c-a0f1-69e9-8e74dc935148.htm" />
+        <HelpTOCNode Title="Item Property " Url="html/4a5ab0f7-07e9-44dc-c628-342da8944d68.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Title="Favorites Methods" Url="html/810ab923-dac2-b103-e480-50bbd34e2548.htm" />
+    </HelpTOCNode>
+    <HelpTOCNode Id="dea55667-ad26-4a16-bead-f288ddd2f89b" Title="History Class" Url="html/a1a4c2e9-f775-487f-8727-020247ae74b0.htm">
+      <HelpTOCNode Id="36c00f64-1d16-4d1e-b0c2-4570cddff9a4" Title="History Constructor " Url="html/84366942-0e5d-17d4-b155-c0c4324855f0.htm">
+        <HelpTOCNode Title="History Constructor " Url="html/3bd1e023-0f3a-1af5-991a-6e4963ca8925.htm" />
+        <HelpTOCNode Title="History Constructor (ArrayList)" Url="html/124a00b5-e07c-c9eb-c2cc-1dec8eb8df05.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="2d14c315-7f0f-437a-8a34-ded0b0716853" Title="History Properties" Url="html/b54c87a0-a4f5-602c-9123-f7adb82af2c9.htm">
+        <HelpTOCNode Title="HistoryOfAddresses Property " Url="html/e631c9db-e002-017c-f81e-6874a1053108.htm" />
+        <HelpTOCNode Title="Item Property " Url="html/70c21800-6640-9c3e-c724-b075739f2ef9.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="3717527f-b0e1-42a0-ad7c-c071235e7994" Title="History Methods" Url="html/dfe7b1be-9478-24a9-5094-996f5585cde6.htm">
+        <HelpTOCNode Title="Count Method " Url="html/a0157f80-a205-a0d0-452f-d4178735896e.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="8553fdd0-9bf9-4d9e-adc9-73fafdf71a93" Title="HistoryItem Class" Url="html/0d4aa4d0-5cc6-4ab8-3035-36530a793883.htm">
+      <HelpTOCNode Title="HistoryItem Constructor " Url="html/2c3600d8-38d6-a197-8cc8-9e20e57d2cc6.htm" />
+      <HelpTOCNode Id="5051c856-7432-4f66-aa56-d854296099e4" Title="HistoryItem Properties" Url="html/e5d07dc5-2196-15ea-5387-0e4e3c152a97.htm">
+        <HelpTOCNode Title="AccessDate Property " Url="html/af9f001a-4d03-2083-a934-ade6b7a468bc.htm" />
+        <HelpTOCNode Title="Address Property " Url="html/0c653266-ba65-1fb2-b758-9a7b5ce972a0.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Title="HistoryItem Methods" Url="html/ec60c5ed-076a-5189-6d03-ec0470dfaf59.htm" />
+    </HelpTOCNode>
+    <HelpTOCNode Id="ed72a124-7c8f-400f-84a8-2170d10b0610" Title="HomeItem Class" Url="html/559b273c-ef7f-d007-e12c-ffe7c198eaf7.htm">
+      <HelpTOCNode Title="HomeItem Constructor " Url="html/56f2e8aa-5e94-aa1c-7643-577b4b0405af.htm" />
+      <HelpTOCNode Id="db8dc40b-552e-4565-b26f-85a42a5e3c83" Title="HomeItem Properties" Url="html/9904233d-0235-45ec-9804-d1a42431265f.htm">
+        <HelpTOCNode Title="Address Property " Url="html/c8d07183-e634-4020-4f3b-8467850752c7.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Title="HomeItem Methods" Url="html/d0f3b427-c3d0-bdd0-fc66-6c5b0ed90f02.htm" />
+    </HelpTOCNode>
+    <HelpTOCNode Id="9488332f-7c97-40b9-9e51-0886e7c8d0c0" Title="NotFoundPage Class" Url="html/3a26c612-78de-f593-3d0e-0461627bf25e.htm">
+      <HelpTOCNode Title="NotFoundPage Constructor " Url="html/04f23903-1b14-a53b-c309-a5bd051afb56.htm" />
+      <HelpTOCNode Title="NotFoundPage Properties" Url="html/c0baebd8-75c5-5b1f-feca-4f90b9457857.htm" />
+      <HelpTOCNode Title="NotFoundPage Methods" Url="html/a945d923-7de7-2dea-c3a5-ccd17ec20607.htm" />
+    </HelpTOCNode>
+    <HelpTOCNode Id="56c37fe8-8e25-4322-9063-9554d12e89ae" Title="Page Class" Url="html/8b9e0c41-7027-d9de-b28e-1cb2441f8b0b.htm">
+      <HelpTOCNode Title="Page Constructor " Url="html/f7bf0dfa-a43c-28db-6c0f-a08bf1c00cce.htm" />
+      <HelpTOCNode Id="44883c02-3ab8-43d0-8028-7d228a3c9896" Title="Page Properties" Url="html/0826e622-024b-94b8-2b30-f58e1f533196.htm">
+        <HelpTOCNode Title="Address Property " Url="html/f76618e4-db9c-eb82-0d3a-006e33a04fed.htm" />
+        <HelpTOCNode Title="Content Property " Url="html/a13b3f18-6a4b-9a49-8c83-96eb8062e98e.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Title="Page Methods" Url="html/ac951271-8562-80ef-4556-8798c1faeca3.htm" />
+    </HelpTOCNode>
+    <HelpTOCNode Id="6c141c4e-4382-472a-a3e8-cdca45b7efda" Title="ServerErrorPage Class" Url="html/09ac5169-48cf-14b4-a707-5f1e421cf11b.htm">
+      <HelpTOCNode Title="ServerErrorPage Constructor " Url="html/e0961990-ce0b-3a28-537e-0f9f682b260a.htm" />
+      <HelpTOCNode Title="ServerErrorPage Properties" Url="html/7b5aa3eb-4cdc-4e58-fd34-a06a27cb3b2c.htm" />
+      <HelpTOCNode Title="ServerErrorPage Methods" Url="html/28d3af0b-65cc-3eb2-7e30-f05ab574a0c1.htm" />
+    </HelpTOCNode>
+    <HelpTOCNode Id="a5e5b300-613c-4ffc-b80c-7196e244e3a4" Title="UnsupportedErrorPage Class" Url="html/874ee516-d81a-5f93-aefb-56f61e2b4179.htm">
+      <HelpTOCNode Title="UnsupportedErrorPage Constructor " Url="html/0c7b0d13-7af2-194c-5951-62073de66122.htm" />
+      <HelpTOCNode Title="UnsupportedErrorPage Properties" Url="html/108a1bfe-129b-3d43-b4c4-2452c275a479.htm" />
+      <HelpTOCNode Title="UnsupportedErrorPage Methods" Url="html/dcd0d9a7-5a48-897b-8309-5e3ed09b52ee.htm" />
+    </HelpTOCNode>
+  </HelpTOCNode>
+</HelpTOC>

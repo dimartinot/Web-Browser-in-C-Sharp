@@ -60,7 +60,7 @@ namespace WebBrowser.Tests
 
             try
             {
-                Console.WriteLine(String.Format("[{0}] ArgumentNullException for first argument null expected..", DateTime.Now));
+                Console.WriteLine(String.Format("[{0}] ArgumentNullException for first null argument expected..", DateTime.Now));
                 FavoritesController.AddToFavorites(null, "");
                 WriteLineNotPassed(String.Format("[{0}] Test not passed..", DateTime.Now));
             }
@@ -71,7 +71,7 @@ namespace WebBrowser.Tests
 
             try
             {
-                Console.WriteLine(String.Format("[{0}] ArgumentNullException for first argument null expected..", DateTime.Now));
+                Console.WriteLine(String.Format("[{0}] ArgumentNullException for second null argument expected..", DateTime.Now));
                 FavoritesController.AddToFavorites("", null);
                 WriteLineNotPassed(String.Format("[{0}] Test not passed..", DateTime.Now));
             }
@@ -144,7 +144,7 @@ namespace WebBrowser.Tests
                 FavoritesController.DeleteFavourite(-1);
                 WriteLineNotPassed(String.Format("[{0}] Test not passed...", DateTime.Now));
             }
-            catch (Exception e)
+            catch (Exceptions.InvalidValuedVariableException e)
             {
                 WriteLinePassed(String.Format("[{0}] Test passed...", DateTime.Now));
             }
@@ -373,7 +373,7 @@ namespace WebBrowser.Tests
                 Models.Page page = NavigationController.BackwardPage(null);
                 WriteLineNotPassed(String.Format("[{0}] Test not passed...", DateTime.Now));
             }
-            catch (Exception e)
+            catch (Exceptions.InvalidValuedVariableException e)
             {
                 WriteLinePassed(String.Format("[{0}] Test passed..", DateTime.Now));
             }
@@ -389,7 +389,7 @@ namespace WebBrowser.Tests
                 Models.Page page = NavigationController.ForwardPage(null);
                 WriteLineNotPassed(String.Format("[{0}] Test not passed...", DateTime.Now));
             }
-            catch (Exception e)
+            catch (Exceptions.InvalidValuedVariableException e)
             {
                 WriteLinePassed(String.Format("[{0}] Test passed..", DateTime.Now));
             }
@@ -405,7 +405,7 @@ namespace WebBrowser.Tests
                 NavigationController.GetPageTitle(null);
                 WriteLineNotPassed(String.Format("[{0}] Test not passed...", DateTime.Now));
             }
-            catch (Exception e)
+            catch (Exceptions.InvalidValuedVariableException e)
             {
                 WriteLinePassed(String.Format("[{0}] Test passed..", DateTime.Now));
             }

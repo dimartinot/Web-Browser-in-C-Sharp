@@ -170,7 +170,7 @@ namespace WebBrowser
         /// <param name="e"></param>
         private void RefreshButton_Click(object sender, EventArgs e)
         {
-            this.ReloadContent();
+            this.LoadContent(this.ActivePage.Address);
         }
 
         /// <summary>

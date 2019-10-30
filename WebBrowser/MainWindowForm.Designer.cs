@@ -52,15 +52,16 @@
             this.tableLayoutPanel1.ColumnCount = 3;
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 11.86161F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 88.13838F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 193F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 259F));
             this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel2, 0, 0);
             this.tableLayoutPanel1.Controls.Add(this.addressTextBox, 1, 0);
             this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel4, 2, 0);
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(3, 3);
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(4, 4);
+            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 1;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(1258, 39);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(1677, 48);
             this.tableLayoutPanel1.TabIndex = 0;
             // 
             // tableLayoutPanel2
@@ -69,8 +70,8 @@
             this.tableLayoutPanel2.ColumnCount = 4;
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 44F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 10F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 59F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 13F));
             this.tableLayoutPanel2.Controls.Add(this.refreshButton, 2, 0);
             this.tableLayoutPanel2.Controls.Add(this.buttonLeft, 0, 0);
             this.tableLayoutPanel2.Controls.Add(this.buttonRight, 1, 0);
@@ -79,7 +80,7 @@
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
             this.tableLayoutPanel2.RowCount = 1;
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(126, 39);
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(168, 48);
             this.tableLayoutPanel2.TabIndex = 3;
             // 
             // refreshButton
@@ -87,9 +88,10 @@
             this.refreshButton.BackgroundImage = global::WebBrowser.Properties.Resources.refresh_arrow;
             this.refreshButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.refreshButton.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.refreshButton.Location = new System.Drawing.Point(75, 3);
+            this.refreshButton.Location = new System.Drawing.Point(100, 4);
+            this.refreshButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.refreshButton.Name = "refreshButton";
-            this.refreshButton.Size = new System.Drawing.Size(31, 29);
+            this.refreshButton.Size = new System.Drawing.Size(41, 36);
             this.refreshButton.TabIndex = 2;
             this.refreshButton.UseVisualStyleBackColor = true;
             this.refreshButton.Click += new System.EventHandler(this.RefreshButton_Click);
@@ -103,9 +105,10 @@
             this.buttonLeft.Cursor = System.Windows.Forms.Cursors.Default;
             this.buttonLeft.FlatAppearance.BorderSize = 0;
             this.buttonLeft.ForeColor = System.Drawing.Color.Transparent;
-            this.buttonLeft.Location = new System.Drawing.Point(3, 3);
+            this.buttonLeft.Location = new System.Drawing.Point(4, 4);
+            this.buttonLeft.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.buttonLeft.Name = "buttonLeft";
-            this.buttonLeft.Size = new System.Drawing.Size(30, 29);
+            this.buttonLeft.Size = new System.Drawing.Size(40, 36);
             this.buttonLeft.TabIndex = 0;
             this.buttonLeft.UseVisualStyleBackColor = false;
             this.buttonLeft.Click += new System.EventHandler(this.ButtonLeft_Click);
@@ -116,10 +119,11 @@
             this.buttonRight.BackgroundImage = global::WebBrowser.Properties.Resources.arrow_point_to_right;
             this.buttonRight.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.buttonRight.FlatAppearance.BorderSize = 0;
-            this.buttonRight.Location = new System.Drawing.Point(39, 3);
+            this.buttonRight.Location = new System.Drawing.Point(52, 4);
+            this.buttonRight.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.buttonRight.Name = "buttonRight";
             this.buttonRight.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.buttonRight.Size = new System.Drawing.Size(30, 29);
+            this.buttonRight.Size = new System.Drawing.Size(40, 36);
             this.buttonRight.TabIndex = 1;
             this.buttonRight.UseVisualStyleBackColor = true;
             this.buttonRight.Click += new System.EventHandler(this.ButtonRight_Click);
@@ -128,10 +132,11 @@
             // 
             this.addressTextBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.addressTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.addressTextBox.Location = new System.Drawing.Point(129, 3);
+            this.addressTextBox.Location = new System.Drawing.Point(172, 4);
+            this.addressTextBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.addressTextBox.Name = "addressTextBox";
             this.addressTextBox.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.addressTextBox.Size = new System.Drawing.Size(932, 29);
+            this.addressTextBox.Size = new System.Drawing.Size(1241, 34);
             this.addressTextBox.TabIndex = 0;
             this.addressTextBox.KeyDown += new System.Windows.Forms.KeyEventHandler(this.AddressTextBox_KeyDown);
             // 
@@ -144,12 +149,12 @@
             this.tableLayoutPanel4.Controls.Add(this.comboBox1, 2, 0);
             this.tableLayoutPanel4.Controls.Add(this.homeButton, 0, 0);
             this.tableLayoutPanel4.Controls.Add(this.starButton, 1, 0);
-            this.tableLayoutPanel4.Location = new System.Drawing.Point(1064, 0);
+            this.tableLayoutPanel4.Location = new System.Drawing.Point(1417, 0);
             this.tableLayoutPanel4.Margin = new System.Windows.Forms.Padding(0);
             this.tableLayoutPanel4.Name = "tableLayoutPanel4";
             this.tableLayoutPanel4.RowCount = 1;
             this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel4.Size = new System.Drawing.Size(172, 39);
+            this.tableLayoutPanel4.Size = new System.Drawing.Size(229, 48);
             this.tableLayoutPanel4.TabIndex = 4;
             // 
             // comboBox1
@@ -162,9 +167,10 @@
             "History",
             "Favorites",
             "Quit.."});
-            this.comboBox1.Location = new System.Drawing.Point(84, 3);
+            this.comboBox1.Location = new System.Drawing.Point(112, 4);
+            this.comboBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(83, 28);
+            this.comboBox1.Size = new System.Drawing.Size(109, 33);
             this.comboBox1.TabIndex = 4;
             this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.ComboBox1_SelectedIndexChanged_1);
             // 
@@ -172,9 +178,10 @@
             // 
             this.homeButton.BackgroundImage = global::WebBrowser.Properties.Resources.home_icon_silhouette;
             this.homeButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.homeButton.Location = new System.Drawing.Point(3, 3);
+            this.homeButton.Location = new System.Drawing.Point(4, 4);
+            this.homeButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.homeButton.Name = "homeButton";
-            this.homeButton.Size = new System.Drawing.Size(31, 29);
+            this.homeButton.Size = new System.Drawing.Size(41, 36);
             this.homeButton.TabIndex = 6;
             this.homeButton.UseVisualStyleBackColor = true;
             this.homeButton.Click += new System.EventHandler(this.HomeButton_Click);
@@ -183,9 +190,10 @@
             // 
             this.starButton.BackgroundImage = global::WebBrowser.Properties.Resources.star_1_;
             this.starButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.starButton.Location = new System.Drawing.Point(45, 3);
+            this.starButton.Location = new System.Drawing.Point(60, 4);
+            this.starButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.starButton.Name = "starButton";
-            this.starButton.Size = new System.Drawing.Size(31, 29);
+            this.starButton.Size = new System.Drawing.Size(41, 36);
             this.starButton.TabIndex = 5;
             this.starButton.UseVisualStyleBackColor = true;
             this.starButton.Click += new System.EventHandler(this.StarButton_Click);
@@ -199,41 +207,45 @@
             this.tableLayoutPanel3.Controls.Add(this.webPageTitle, 0, 1);
             this.tableLayoutPanel3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel3.Location = new System.Drawing.Point(0, 0);
+            this.tableLayoutPanel3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tableLayoutPanel3.Name = "tableLayoutPanel3";
             this.tableLayoutPanel3.RowCount = 3;
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7.048458F));
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 4.405286F));
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 88.6931F));
-            this.tableLayoutPanel3.Size = new System.Drawing.Size(1264, 681);
+            this.tableLayoutPanel3.Size = new System.Drawing.Size(1685, 838);
             this.tableLayoutPanel3.TabIndex = 1;
             // 
             // pageBody
             // 
             this.pageBody.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pageBody.Location = new System.Drawing.Point(3, 79);
+            this.pageBody.Location = new System.Drawing.Point(4, 98);
+            this.pageBody.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pageBody.Multiline = true;
             this.pageBody.Name = "pageBody";
             this.pageBody.ReadOnly = true;
-            this.pageBody.Size = new System.Drawing.Size(1258, 599);
+            this.pageBody.Size = new System.Drawing.Size(1677, 736);
             this.pageBody.TabIndex = 1;
             // 
             // webPageTitle
             // 
             this.webPageTitle.AutoSize = true;
             this.webPageTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.webPageTitle.Location = new System.Drawing.Point(3, 47);
+            this.webPageTitle.Location = new System.Drawing.Point(4, 58);
+            this.webPageTitle.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.webPageTitle.Name = "webPageTitle";
-            this.webPageTitle.Size = new System.Drawing.Size(0, 26);
+            this.webPageTitle.Size = new System.Drawing.Size(0, 31);
             this.webPageTitle.TabIndex = 2;
             // 
             // MainWindow
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlLight;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.ClientSize = new System.Drawing.Size(1264, 681);
+            this.ClientSize = new System.Drawing.Size(1685, 838);
             this.Controls.Add(this.tableLayoutPanel3);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "MainWindow";
             this.Text = "Web Browser in a Nutshel";
             this.tableLayoutPanel1.ResumeLayout(false);

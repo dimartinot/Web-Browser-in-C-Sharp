@@ -21,6 +21,7 @@ namespace WebBrowser.Controllers
         /// Path to the .xml serialization of the "HomeItem" instance
         /// </summary>
         private const string HOME_PATH = "homepage.xml";
+        private const string DEFAULT_HOME = "https://www.google.com";
 
         /// <summary>
         /// Class constructor that calls the <seealso cref="Controllers.HomePageController.LoadHomePage"/> to load the CurrentHomePage attribute from the serialized .xml
@@ -45,7 +46,7 @@ namespace WebBrowser.Controllers
                 }
                 catch (Exception e)
                 {
-                    CurrentHomePage = new Models.HomeItem("");
+                    CurrentHomePage = new Models.HomeItem(DEFAULT_HOME);
                 }
                 stream.Close();
             }
@@ -54,7 +55,7 @@ namespace WebBrowser.Controllers
                 Stream stream = File.Open(HOME_PATH, FileMode.Create);
                 stream.Close();
 
-                CurrentHomePage = new Models.HomeItem("");
+                CurrentHomePage = new Models.HomeItem(DEFAULT_HOME);
             }
             if (this.CurrentHomePage == null)
             {

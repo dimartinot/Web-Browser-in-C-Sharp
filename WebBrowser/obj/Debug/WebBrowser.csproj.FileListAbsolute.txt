@@ -13,7 +13,6 @@ h:\documents\visual studio 2017\Projects\WebBrowser\WebBrowser\obj\Debug\WebBrow
 H:\Documents\Visual Studio 2017\Projects\WebBrowser\Web-Broswer-in-C-\WebBrowser\bin\Debug\WebBrowser.exe.config
 H:\Documents\Visual Studio 2017\Projects\WebBrowser\Web-Broswer-in-C-\WebBrowser\bin\Debug\WebBrowser.exe
 H:\Documents\Visual Studio 2017\Projects\WebBrowser\Web-Broswer-in-C-\WebBrowser\bin\Debug\WebBrowser.pdb
-H:\Documents\Visual Studio 2017\Projects\WebBrowser\Web-Broswer-in-C-\WebBrowser\obj\Debug\WebBrowser.csprojResolveAssemblyReference.cache
 H:\Documents\Visual Studio 2017\Projects\WebBrowser\Web-Broswer-in-C-\WebBrowser\obj\Debug\WebBrowser.FavoriteListForm.resources
 H:\Documents\Visual Studio 2017\Projects\WebBrowser\Web-Broswer-in-C-\WebBrowser\obj\Debug\WebBrowser.FavoritesForm.resources
 H:\Documents\Visual Studio 2017\Projects\WebBrowser\Web-Broswer-in-C-\WebBrowser\obj\Debug\WebBrowser.HistoryForm.resources
@@ -23,3 +22,7 @@ H:\Documents\Visual Studio 2017\Projects\WebBrowser\Web-Broswer-in-C-\WebBrowser
 H:\Documents\Visual Studio 2017\Projects\WebBrowser\Web-Broswer-in-C-\WebBrowser\obj\Debug\WebBrowser.exe
 H:\Documents\Visual Studio 2017\Projects\WebBrowser\Web-Broswer-in-C-\WebBrowser\obj\Debug\WebBrowser.pdb
 H:\Documents\Visual Studio 2017\Projects\WebBrowser\Web-Broswer-in-C-\WebBrowser\obj\Debug\WebBrowser.HomePageForm.resources
+H:\Documents\Visual Studio 2017\Projects\WebBrowser\Web-Broswer-in-C-\WebBrowser\bin\Debug\WebBrowser.exe.manifest
+H:\Documents\Visual Studio 2017\Projects\WebBrowser\Web-Broswer-in-C-\WebBrowser\bin\Debug\WebBrowser.application
+H:\Documents\Visual Studio 2017\Projects\WebBrowser\Web-Broswer-in-C-\WebBrowser\obj\Debug\WebBrowser.exe.manifest
+H:\Documents\Visual Studio 2017\Projects\WebBrowser\Web-Broswer-in-C-\WebBrowser\obj\Debug\WebBrowser.application

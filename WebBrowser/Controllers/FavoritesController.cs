@@ -85,12 +85,14 @@ namespace WebBrowser.Controllers
         /// </summary>
         /// <param name="address">String acting as a webpage url</param>
         /// <param name="name">Name of this webpage</param>
-        public void AddToFavorites(string address, string name)
+        /// <param name="toSave">Boolean that says if we save the favourites to disk. True as default</param>
+        public void AddToFavorites(string address, string name, bool toSave = true)
         {
             if (address != null & name != null)
             {
                 this.Favorites.FavouritesList.Add(new Models.FavouriteItem(address, name));
-                this.SaveFavorites();
+                if (toSave)
+                    this.SaveFavorites();
             } else
             {
                 throw new ArgumentNullException();
@@ -120,7 +122,8 @@ namespace WebBrowser.Controllers
         /// </summary>
         /// <param name="favoriteItem">Instance of a <seealso cref="Models.FavouriteItem"/></param>
         /// <param name="index">Index to which the change should be applied</param>
-        public void UpdateFavorite(FavouriteItem favoriteItem, int index)
+        /// <param name="toSave">Boolean that says if we save the favourites to disk. True as default</param>
+        public void UpdateFavorite(FavouriteItem favoriteItem, int index, bool toSave = true)
         {
             if (favoriteItem == null)
             {
@@ -129,7 +132,8 @@ namespace WebBrowser.Controllers
             if (index >= 0 && index < this.Favorites.FavouritesList.Count)
             {
                 this.Favorites[index] = favoriteItem;
-                this.SaveFavorites();
+                if (toSave)
+                    this.SaveFavorites();
             } else
             {
                 throw new Exceptions.InvalidValuedVariableException("Index out of bounds");
@@ -140,12 +144,14 @@ namespace WebBrowser.Controllers
         /// Delete a given favorite at a given index.
         /// </summary>
         /// <param name="objIndex">Index of the <seealso cref="Models.FavouriteItem"/> to delete</param>
-        public void DeleteFavourite(int objIndex)
+        /// <param name="toSave">Boolean that says if we save the favourites to disk. True as default</param>
+        public void DeleteFavourite(int objIndex, bool toSave = true)
         {
             if (objIndex >= 0 && objIndex < this.Favorites.FavouritesList.Count)
             {
                 this.Favorites.FavouritesList.RemoveAt(objIndex);
-                this.SaveFavorites();
+                if (toSave)
+                    this.SaveFavorites();
             }
 
             else

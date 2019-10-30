@@ -39,7 +39,7 @@ namespace WebBrowser.Tests
             try
             {
                 Console.WriteLine(String.Format("[{0}] No exception expected..", DateTime.Now));
-                FavoritesController.AddToFavorites("", "");
+                FavoritesController.AddToFavorites("", "", false);
                 WriteLinePassed(String.Format("[{0}] Test passed..", DateTime.Now));
             }
             catch (ArgumentNullException e)
@@ -50,7 +50,7 @@ namespace WebBrowser.Tests
             try
             {
                 Console.WriteLine(String.Format("[{0}] ArgumentNullException for both arguments null expected..", DateTime.Now));
-                FavoritesController.AddToFavorites(null, null);
+                FavoritesController.AddToFavorites(null, null, false);
                 WriteLineNotPassed(String.Format("[{0}] Test not passed..", DateTime.Now));
             }
             catch (ArgumentNullException e)
@@ -61,7 +61,7 @@ namespace WebBrowser.Tests
             try
             {
                 Console.WriteLine(String.Format("[{0}] ArgumentNullException for first null argument expected..", DateTime.Now));
-                FavoritesController.AddToFavorites(null, "");
+                FavoritesController.AddToFavorites(null, "", false);
                 WriteLineNotPassed(String.Format("[{0}] Test not passed..", DateTime.Now));
             }
             catch (ArgumentNullException e)
@@ -72,7 +72,7 @@ namespace WebBrowser.Tests
             try
             {
                 Console.WriteLine(String.Format("[{0}] ArgumentNullException for second null argument expected..", DateTime.Now));
-                FavoritesController.AddToFavorites("", null);
+                FavoritesController.AddToFavorites("", null, false);
                 WriteLineNotPassed(String.Format("[{0}] Test not passed..", DateTime.Now));
             }
             catch (ArgumentNullException e)
@@ -88,7 +88,7 @@ namespace WebBrowser.Tests
             try
             {
                 Console.WriteLine(String.Format("[{0}] Updating with ('a','b')..", DateTime.Now));
-                FavoritesController.UpdateFavorite(new Models.FavouriteItem("a", "b"), 0);
+                FavoritesController.UpdateFavorite(new Models.FavouriteItem("a", "b"), 0, false);
                 Models.FavouriteItem modified = (Models.FavouriteItem)(FavoritesController.ListOfFavoriteItems()[0]);
                 if (modified.Address == "a" & modified.Name == "b")
                     WriteLinePassed(String.Format("[{0}] Test passed..", DateTime.Now));
@@ -103,7 +103,7 @@ namespace WebBrowser.Tests
             try
             {
                 Console.WriteLine(String.Format("[{0}] Updating with out of bound index..", DateTime.Now));
-                FavoritesController.UpdateFavorite(new Models.FavouriteItem("a", "b"), -1);
+                FavoritesController.UpdateFavorite(new Models.FavouriteItem("a", "b"), -1, false);
                 WriteLineNotPassed(String.Format("[{0}] Test not passed...", DateTime.Now));
             }
             catch (Exceptions.InvalidValuedVariableException e)
@@ -114,7 +114,7 @@ namespace WebBrowser.Tests
             try
             {
                 Console.WriteLine(String.Format("[{0}] Updating with null favourite item..", DateTime.Now));
-                FavoritesController.UpdateFavorite(null, 0);
+                FavoritesController.UpdateFavorite(null, 0, false);
                 WriteLineNotPassed(String.Format("[{0}] Test not passed...", DateTime.Now));
             }
             catch (ArgumentNullException e)
@@ -130,7 +130,7 @@ namespace WebBrowser.Tests
             try
             {
                 Console.WriteLine(String.Format("[{0}] Deleting first item..", DateTime.Now));
-                FavoritesController.DeleteFavourite(0);
+                FavoritesController.DeleteFavourite(0, false);
                 WriteLinePassed(String.Format("[{0}] Test passed...", DateTime.Now));
             }
             catch (Exception e)
@@ -141,7 +141,7 @@ namespace WebBrowser.Tests
             try
             {
                 Console.WriteLine(String.Format("[{0}] Deleting out of bound (-1) item..", DateTime.Now));
-                FavoritesController.DeleteFavourite(-1);
+                FavoritesController.DeleteFavourite(-1, false);
                 WriteLineNotPassed(String.Format("[{0}] Test not passed...", DateTime.Now));
             }
             catch (Exceptions.InvalidValuedVariableException e)
@@ -152,7 +152,7 @@ namespace WebBrowser.Tests
             try
             {
                 Console.WriteLine(String.Format("[{0}] Deleting out of bound (size+1) item..", DateTime.Now));
-                FavoritesController.DeleteFavourite(FavoritesController.NumberOfFavorites() + 1);
+                FavoritesController.DeleteFavourite(FavoritesController.NumberOfFavorites() + 1, false);
                 WriteLineNotPassed(String.Format("[{0}] Test not passed...", DateTime.Now));
             }
             catch (Exception e)
